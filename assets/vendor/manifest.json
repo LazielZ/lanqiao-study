@@ -1,0 +1,68 @@
+[
+  {
+    "file": "pyodide/pyodide.js",
+    "bytes": 14913,
+    "sha256": "b4cb23a53aba19c221659b9fb40a2f18281d685691dc06647fb0afd0681baf98",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.js"
+  },
+  {
+    "file": "pyodide/pyodide.mjs",
+    "bytes": 13931,
+    "sha256": "04c052c815abb0bf2981fa38c2dfa58e3120ee5288c956df2b2a15e301782c5f",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.mjs"
+  },
+  {
+    "file": "pyodide/pyodide.asm.js",
+    "bytes": 1255688,
+    "sha256": "6b4c90de5b7172873f04f21884d0e9d2274e305fe32116558fe3e4fbe3618d51",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.asm.js"
+  },
+  {
+    "file": "pyodide/pyodide.asm.wasm",
+    "bytes": 10105545,
+    "sha256": "a50dd1843f805a0b7c45b61037ee0d7b26dfe85efe0e18ef95a34ad24e401f5f",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide.asm.wasm"
+  },
+  {
+    "file": "pyodide/python_stdlib.zip",
+    "bytes": 2360737,
+    "sha256": "16611534726e5d8ac2bd8f926410b2dcb8d6f49aa24913463533b457a2115c16",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/python_stdlib.zip"
+  },
+  {
+    "file": "pyodide/pyodide-lock.json",
+    "bytes": 112205,
+    "sha256": "9c45b916001a750f4102fc287494f3eab215909c7535c626a20db80fd6333e2c",
+    "url": "https://cdn.jsdelivr.net/pyodide/v0.27.7/full/pyodide-lock.json"
+  },
+  {
+    "file": "codemirror/codemirror.js",
+    "bytes": 402012,
+    "sha256": "0644e6418c4129c9584b9b772b8b8bdb0b4fbab1efd848a98baf1fe147381f22",
+    "url": "https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.js"
+  },
+  {
+    "file": "codemirror/codemirror.css",
+    "bytes": 8720,
+    "sha256": "eb494ea972d2661ef86f7f6ac656dd6786d721e49c9c1b46e1eb967e4b6f9bf3",
+    "url": "https://cdn.jsdelivr.net/npm/codemirror@5.65.16/lib/codemirror.css"
+  },
+  {
+    "file": "codemirror/python.js",
+    "bytes": 14984,
+    "sha256": "19a59ca387addb04e95002c9adbe2b8c231427ce49369ac537107e3088a6947c",
+    "url": "https://cdn.jsdelivr.net/npm/codemirror@5.65.16/mode/python/python.js"
+  },
+  {
+    "file": "codemirror/LICENSE",
+    "bytes": 1113,
+    "sha256": "168a4becc968f5001e2ee2e0291b6e4daabafc1894a11ade1e11d56e96096e07",
+    "url": "https://cdn.jsdelivr.net/npm/codemirror@5.65.16/LICENSE"
+  },
+  {
+    "file": "pyodide/LICENSE",
+    "bytes": 16725,
+    "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5",
+    "url": "https://raw.githubusercontent.com/pyodide/pyodide/0.27.7/LICENSE"
+  }
+]

@@ -1,0 +1,3564 @@
+{
+  "start": "2026-11-09",
+  "end": "2027-02-28",
+  "modules": [
+    {
+      "id": 1,
+      "name": "模型部署与接口调用",
+      "score": 20,
+      "color": "#2458c6"
+    },
+    {
+      "id": 2,
+      "name": "模型配置与 Prompt",
+      "score": 15,
+      "color": "#8364bb"
+    },
+    {
+      "id": 3,
+      "name": "数据增强与 RAG",
+      "score": 25,
+      "color": "#16837b"
+    },
+    {
+      "id": 4,
+      "name": "轻量级推理优化",
+      "score": 15,
+      "color": "#b07826"
+    },
+    {
+      "id": 5,
+      "name": "应用开发与工程规范",
+      "score": 25,
+      "color": "#b34f76"
+    }
+  ],
+  "weeks": [
+    {
+      "id": 1,
+      "title": "Python 工程起步",
+      "module": 5,
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "project": "12条模拟课程资料查询工具",
+      "exam": "5个边界测试通过；能独立解释读取、查询和异常流程",
+      "lab": "在 week01/ 中拆分 loader/retriever/service，读取 data/knowledge.json，用 pytest 验证空输入、缺文件、坏JSON、正常查询和无答案。",
+      "topics": [
+        "w01-1",
+        "w01-2",
+        "w01-3"
+      ],
+      "days": [
+        {
+          "id": "w01-d1",
+          "date": "2026-11-09",
+          "hours": 2,
+          "task": "学习「函数、列表与字典查询」，写出输入输出与边界"
+        },
+        {
+          "id": "w01-d2",
+          "date": "2026-11-10",
+          "hours": 2,
+          "task": "完成「函数、列表与字典查询」并补一个新用例"
+        },
+        {
+          "id": "w01-d3",
+          "date": "2026-11-11",
+          "hours": 2,
+          "task": "独立完成「JSON 读取与异常边界」，解释错误路径"
+        },
+        {
+          "id": "w01-d4",
+          "date": "2026-11-12",
+          "hours": 2,
+          "task": "完成「相对路径、模块与基础测试」，关闭答案重写"
+        },
+        {
+          "id": "w01-d5",
+          "date": "2026-11-13",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w01-d6",
+          "date": "2026-11-14",
+          "hours": 4,
+          "task": "项目实战：12条模拟课程资料查询工具；执行官方环境实验"
+        },
+        {
+          "id": "w01-d7",
+          "date": "2026-11-15",
+          "hours": 4,
+          "task": "周考核：5个边界测试通过；能独立解释读取、查询和异常流程；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "项目组织与环境接管",
+      "module": 5,
+      "start": "2026-11-16",
+      "end": "2026-11-22",
+      "project": "可复现运行的多文件工程",
+      "exam": "8个测试通过；无个人绝对路径；说明模块依赖",
+      "lab": "在官方体验环境核对 Python 和依赖版本，用 venv 理解隔离；练习 pwd/ls/cat、相对路径、git diff 与回退，记录环境检查。",
+      "topics": [
+        "w02-1",
+        "w02-2",
+        "w02-3"
+      ],
+      "days": [
+        {
+          "id": "w02-d1",
+          "date": "2026-11-16",
+          "hours": 2,
+          "task": "学习「类型、类与状态封装」，写出输入输出与边界"
+        },
+        {
+          "id": "w02-d2",
+          "date": "2026-11-17",
+          "hours": 2,
+          "task": "完成「类型、类与状态封装」并补一个新用例"
+        },
+        {
+          "id": "w02-d3",
+          "date": "2026-11-18",
+          "hours": 2,
+          "task": "独立完成「虚拟环境与依赖清单」，解释错误路径"
+        },
+        {
+          "id": "w02-d4",
+          "date": "2026-11-19",
+          "hours": 2,
+          "task": "完成「断言测试与调试定位」，关闭答案重写"
+        },
+        {
+          "id": "w02-d5",
+          "date": "2026-11-20",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w02-d6",
+          "date": "2026-11-21",
+          "hours": 4,
+          "task": "项目实战：可复现运行的多文件工程；执行官方环境实验"
+        },
+        {
+          "id": "w02-d7",
+          "date": "2026-11-22",
+          "hours": 4,
+          "task": "周考核：8个测试通过；无个人绝对路径；说明模块依赖；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "FastAPI 与接口协议",
+      "module": 1,
+      "start": "2026-11-23",
+      "end": "2026-11-29",
+      "project": "健康、单条和批量接口骨架",
+      "exam": "正常与非法请求状态码、类型均正确",
+      "lab": "在统一环境运行 FastAPI/Uvicorn/Pydantic，编写 /health、/answer、/batch_answer；批量1–10条，top_k1–5，问题1–500字符。",
+      "topics": [
+        "w03-1",
+        "w03-2",
+        "w03-3"
+      ],
+      "days": [
+        {
+          "id": "w03-d1",
+          "date": "2026-11-23",
+          "hours": 2,
+          "task": "学习「HTTP 请求与输入校验」，写出输入输出与边界"
+        },
+        {
+          "id": "w03-d2",
+          "date": "2026-11-24",
+          "hours": 2,
+          "task": "完成「HTTP 请求与输入校验」并补一个新用例"
+        },
+        {
+          "id": "w03-d3",
+          "date": "2026-11-25",
+          "hours": 2,
+          "task": "独立完成「响应 Schema 与字段约束」，解释错误路径"
+        },
+        {
+          "id": "w03-d4",
+          "date": "2026-11-26",
+          "hours": 2,
+          "task": "完成「统一错误与安全输出」，关闭答案重写"
+        },
+        {
+          "id": "w03-d5",
+          "date": "2026-11-27",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w03-d6",
+          "date": "2026-11-28",
+          "hours": 4,
+          "task": "项目实战：健康、单条和批量接口骨架；执行官方环境实验"
+        },
+        {
+          "id": "w03-d7",
+          "date": "2026-11-29",
+          "hours": 4,
+          "task": "周考核：正常与非法请求状态码、类型均正确；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "模型加载与服务部署",
+      "module": 1,
+      "start": "2026-11-30",
+      "end": "2026-12-06",
+      "project": "ai_model_service（M1）",
+      "exam": "模拟T1≥16/20，实际加载并调用模型",
+      "lab": "使用官方只读路径与指定 PaddlePaddle/PaddleNLP 基线，核对 tokenizer、设备和精度；模型单次初始化。按样题在60秒内监听0.0.0.0:8000，以实际推理探针验收。",
+      "topics": [
+        "w04-1",
+        "w04-2",
+        "w04-3"
+      ],
+      "days": [
+        {
+          "id": "w04-d1",
+          "date": "2026-11-30",
+          "hours": 2,
+          "task": "学习「Token、编码与批输入」，写出输入输出与边界"
+        },
+        {
+          "id": "w04-d2",
+          "date": "2026-12-01",
+          "hours": 2,
+          "task": "完成「Token、编码与批输入」并补一个新用例"
+        },
+        {
+          "id": "w04-d3",
+          "date": "2026-12-02",
+          "hours": 2,
+          "task": "独立完成「模型生命周期与单次加载」，解释错误路径"
+        },
+        {
+          "id": "w04-d4",
+          "date": "2026-12-03",
+          "hours": 2,
+          "task": "完成「健康检查与真实就绪」，关闭答案重写"
+        },
+        {
+          "id": "w04-d5",
+          "date": "2026-12-04",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w04-d6",
+          "date": "2026-12-05",
+          "hours": 4,
+          "task": "项目实战：ai_model_service（M1）；执行官方环境实验"
+        },
+        {
+          "id": "w04-d7",
+          "date": "2026-12-06",
+          "hours": 4,
+          "task": "周考核：模拟T1≥16/20，实际加载并调用模型；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Prompt 与生成参数",
+      "module": 2,
+      "start": "2026-12-07",
+      "end": "2026-12-13",
+      "project": "三组参数对照实验",
+      "exam": "配置文件真实生效；质量、时延对照完整",
+      "lab": "将 prompts/system.txt 与 config/generation.yaml 接入真实服务；比较3组temperature/top_p/max_tokens，保留同一测试集与环境。",
+      "topics": [
+        "w05-1",
+        "w05-2",
+        "w05-3"
+      ],
+      "days": [
+        {
+          "id": "w05-d1",
+          "date": "2026-12-07",
+          "hours": 2,
+          "task": "学习「System Prompt 与证据边界」，写出输入输出与边界"
+        },
+        {
+          "id": "w05-d2",
+          "date": "2026-12-08",
+          "hours": 2,
+          "task": "完成「System Prompt 与证据边界」并补一个新用例"
+        },
+        {
+          "id": "w05-d3",
+          "date": "2026-12-09",
+          "hours": 2,
+          "task": "独立完成「Temperature、Top-p 与配置校验」，解释错误路径"
+        },
+        {
+          "id": "w05-d4",
+          "date": "2026-12-10",
+          "hours": 2,
+          "task": "完成「Few-shot 与参数对照实验」，关闭答案重写"
+        },
+        {
+          "id": "w05-d5",
+          "date": "2026-12-11",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w05-d6",
+          "date": "2026-12-12",
+          "hours": 4,
+          "task": "项目实战：三组参数对照实验；执行官方环境实验"
+        },
+        {
+          "id": "w05-d7",
+          "date": "2026-12-13",
+          "hours": 4,
+          "task": "周考核：配置文件真实生效；质量、时延对照完整；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "结构化输出与边界",
+      "module": 2,
+      "start": "2026-12-14",
+      "end": "2026-12-20",
+      "project": "可配置结构化问答服务（M2）",
+      "exam": "30条输出结构全通过；模拟T2≥12/15",
+      "lab": "在真实模型上验证 JSON Schema、intent、confidence、sources，测试范围外/无答案/注入输入。拒答不编造制度、不泄露Prompt和堆栈。",
+      "topics": [
+        "w06-1",
+        "w06-2",
+        "w06-3"
+      ],
+      "days": [
+        {
+          "id": "w06-d1",
+          "date": "2026-12-14",
+          "hours": 2,
+          "task": "学习「JSON 输出解析」，写出输入输出与边界"
+        },
+        {
+          "id": "w06-d2",
+          "date": "2026-12-15",
+          "hours": 2,
+          "task": "完成「JSON 输出解析」并补一个新用例"
+        },
+        {
+          "id": "w06-d3",
+          "date": "2026-12-16",
+          "hours": 2,
+          "task": "独立完成「无答案拒答与置信边界」，解释错误路径"
+        },
+        {
+          "id": "w06-d4",
+          "date": "2026-12-17",
+          "hours": 2,
+          "task": "完成「来源与结构关联校验」，关闭答案重写"
+        },
+        {
+          "id": "w06-d5",
+          "date": "2026-12-18",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w06-d6",
+          "date": "2026-12-19",
+          "hours": 4,
+          "task": "项目实战：可配置结构化问答服务（M2）；执行官方环境实验"
+        },
+        {
+          "id": "w06-d7",
+          "date": "2026-12-20",
+          "hours": 4,
+          "task": "周考核：30条输出结构全通过；模拟T2≥12/15；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Embedding 与向量检索",
+      "module": 3,
+      "start": "2026-12-21",
+      "end": "2026-12-27",
+      "project": "语义检索数学实验",
+      "exam": "能解释编码、归一化与排序并返回来源",
+      "lab": "官方环境用指定本地Embedding编码文档与问题，用NumPy验证维度和归一化；FAISS或镜像指定组件建索引。不得混用模型空间。",
+      "topics": [
+        "w07-1",
+        "w07-2",
+        "w07-3"
+      ],
+      "days": [
+        {
+          "id": "w07-d1",
+          "date": "2026-12-21",
+          "hours": 2,
+          "task": "学习「向量维度与点积」，写出输入输出与边界"
+        },
+        {
+          "id": "w07-d2",
+          "date": "2026-12-22",
+          "hours": 2,
+          "task": "完成「向量维度与点积」并补一个新用例"
+        },
+        {
+          "id": "w07-d3",
+          "date": "2026-12-23",
+          "hours": 2,
+          "task": "独立完成「L2 归一化与余弦相似度」，解释错误路径"
+        },
+        {
+          "id": "w07-d4",
+          "date": "2026-12-24",
+          "hours": 2,
+          "task": "完成「索引 Top-k 排序」，关闭答案重写"
+        },
+        {
+          "id": "w07-d5",
+          "date": "2026-12-25",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w07-d6",
+          "date": "2026-12-26",
+          "hours": 4,
+          "task": "项目实战：语义检索数学实验；执行官方环境实验"
+        },
+        {
+          "id": "w07-d7",
+          "date": "2026-12-27",
+          "hours": 4,
+          "task": "周考核：能解释编码、归一化与排序并返回来源；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "文档流水线与索引持久化",
+      "module": 3,
+      "start": "2026-12-28",
+      "end": "2027-01-03",
+      "project": "document_manifest 与可重载索引",
+      "exam": "元数据不丢失；保存与重载结果一致",
+      "lab": "解析Markdown/JSON/TXT，保留id/title/version/effective_date，写 artifacts/index/ 与 document_manifest.json，校验数量和映射。",
+      "topics": [
+        "w08-1",
+        "w08-2",
+        "w08-3"
+      ],
+      "days": [
+        {
+          "id": "w08-d1",
+          "date": "2026-12-28",
+          "hours": 2,
+          "task": "学习「清洗与稳定去重」，写出输入输出与边界"
+        },
+        {
+          "id": "w08-d2",
+          "date": "2026-12-29",
+          "hours": 2,
+          "task": "完成「清洗与稳定去重」并补一个新用例"
+        },
+        {
+          "id": "w08-d3",
+          "date": "2026-12-30",
+          "hours": 2,
+          "task": "独立完成「Chunk 与 Overlap」，解释错误路径"
+        },
+        {
+          "id": "w08-d4",
+          "date": "2026-12-31",
+          "hours": 2,
+          "task": "完成「元数据与文档清单」，关闭答案重写"
+        },
+        {
+          "id": "w08-d5",
+          "date": "2027-01-01",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w08-d6",
+          "date": "2027-01-02",
+          "hours": 4,
+          "task": "项目实战：document_manifest 与可重载索引；执行官方环境实验"
+        },
+        {
+          "id": "w08-d7",
+          "date": "2027-01-03",
+          "hours": 4,
+          "task": "周考核：元数据不丢失；保存与重载结果一致；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Top-k 与混合召回",
+      "module": 3,
+      "start": "2027-01-04",
+      "end": "2027-01-10",
+      "project": "可评估的统一检索器",
+      "exam": "自建标准集Recall@3≥90%（训练目标）",
+      "lab": "用同一编码模型处理查询/文档，比较关键词、FAQ、向量和融合策略，保存每条查询的标准来源与检索结果。",
+      "topics": [
+        "w09-1",
+        "w09-2",
+        "w09-3"
+      ],
+      "days": [
+        {
+          "id": "w09-d1",
+          "date": "2027-01-04",
+          "hours": 2,
+          "task": "学习「关键词检索与候选召回」，写出输入输出与边界"
+        },
+        {
+          "id": "w09-d2",
+          "date": "2027-01-05",
+          "hours": 2,
+          "task": "完成「关键词检索与候选召回」并补一个新用例"
+        },
+        {
+          "id": "w09-d3",
+          "date": "2027-01-06",
+          "hours": 2,
+          "task": "独立完成「混合检索与 RRF 融合」，解释错误路径"
+        },
+        {
+          "id": "w09-d4",
+          "date": "2027-01-07",
+          "hours": 2,
+          "task": "完成「Recall@K 与评估集」，关闭答案重写"
+        },
+        {
+          "id": "w09-d5",
+          "date": "2027-01-08",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w09-d6",
+          "date": "2027-01-09",
+          "hours": 4,
+          "task": "项目实战：可评估的统一检索器；执行官方环境实验"
+        },
+        {
+          "id": "w09-d7",
+          "date": "2027-01-10",
+          "hours": 4,
+          "task": "周考核：自建标准集Recall@3≥90%（训练目标）；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "证据回答与版本管理",
+      "module": 3,
+      "start": "2027-01-11",
+      "end": "2027-01-17",
+      "project": "多文档RAG回答链",
+      "exam": "关键事实、数值条件和来源全部核对",
+      "lab": "串联真实检索和生成，优先最新已生效版本；增加跨文档、多条件、未来版本与来源不足测试，不以简单固定问答映射替代模型。",
+      "topics": [
+        "w10-1",
+        "w10-2",
+        "w10-3"
+      ],
+      "days": [
+        {
+          "id": "w10-d1",
+          "date": "2027-01-11",
+          "hours": 2,
+          "task": "学习「生效日期与版本冲突」，写出输入输出与边界"
+        },
+        {
+          "id": "w10-d2",
+          "date": "2027-01-12",
+          "hours": 2,
+          "task": "完成「生效日期与版本冲突」并补一个新用例"
+        },
+        {
+          "id": "w10-d3",
+          "date": "2027-01-13",
+          "hours": 2,
+          "task": "独立完成「关键事实与数值条件」，解释错误路径"
+        },
+        {
+          "id": "w10-d4",
+          "date": "2027-01-14",
+          "hours": 2,
+          "task": "完成「跨文档证据与来源去重」，关闭答案重写"
+        },
+        {
+          "id": "w10-d5",
+          "date": "2027-01-15",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w10-d6",
+          "date": "2027-01-16",
+          "hours": 4,
+          "task": "项目实战：多文档RAG回答链；执行官方环境实验"
+        },
+        {
+          "id": "w10-d7",
+          "date": "2027-01-17",
+          "hours": 4,
+          "task": "周考核：关键事实、数值条件和来源全部核对；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "表达适配与拒答评估",
+      "module": 3,
+      "start": "2027-01-18",
+      "end": "2027-01-24",
+      "project": "离线RAG课程助教（M3）",
+      "exam": "100条自建集准确率≥85%；无答案拒答≥95%；T3≥21/25",
+      "lab": "先构造12条Python课程资料，再扩展模拟样题业务。建立标准30/同义20/错字10/跨文档15/版本10/无答案10/边界5条训练集。样题未附真实数据，需自行构造。",
+      "topics": [
+        "w11-1",
+        "w11-2",
+        "w11-3"
+      ],
+      "days": [
+        {
+          "id": "w11-d1",
+          "date": "2027-01-18",
+          "hours": 2,
+          "task": "学习「同义词、口语与错别字归一化」，写出输入输出与边界"
+        },
+        {
+          "id": "w11-d2",
+          "date": "2027-01-19",
+          "hours": 2,
+          "task": "完成「同义词、口语与错别字归一化」并补一个新用例"
+        },
+        {
+          "id": "w11-d3",
+          "date": "2027-01-20",
+          "hours": 2,
+          "task": "独立完成「拒答评估与混淆统计」，解释错误路径"
+        },
+        {
+          "id": "w11-d4",
+          "date": "2027-01-21",
+          "hours": 2,
+          "task": "完成「错误分桶与补强顺序」，关闭答案重写"
+        },
+        {
+          "id": "w11-d5",
+          "date": "2027-01-22",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w11-d6",
+          "date": "2027-01-23",
+          "hours": 4,
+          "task": "项目实战：离线RAG课程助教（M3）；执行官方环境实验"
+        },
+        {
+          "id": "w11-d7",
+          "date": "2027-01-24",
+          "hours": 4,
+          "task": "周考核：100条自建集准确率≥85%；无答案拒答≥95%；T3≥21/25；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "缓存与性能度量",
+      "module": 4,
+      "start": "2027-01-25",
+      "end": "2027-01-31",
+      "project": "优化前后性能报告",
+      "exam": "比较平均、P95与峰值内存；效果无明显退化",
+      "lab": "在官方资源配额下索引常驻、模型单次加载、Embedding缓存与版本化失效；5次预热后固定题集测时，客户端计时并采集真实进程峰值内存。",
+      "topics": [
+        "w12-1",
+        "w12-2",
+        "w12-3"
+      ],
+      "days": [
+        {
+          "id": "w12-d1",
+          "date": "2027-01-25",
+          "hours": 2,
+          "task": "学习「缓存键与版本失效」，写出输入输出与边界"
+        },
+        {
+          "id": "w12-d2",
+          "date": "2027-01-26",
+          "hours": 2,
+          "task": "完成「缓存键与版本失效」并补一个新用例"
+        },
+        {
+          "id": "w12-d3",
+          "date": "2027-01-27",
+          "hours": 2,
+          "task": "独立完成「LRU 缓存与重复计算」，解释错误路径"
+        },
+        {
+          "id": "w12-d4",
+          "date": "2027-01-28",
+          "hours": 2,
+          "task": "完成「平均时延与 P95」，关闭答案重写"
+        },
+        {
+          "id": "w12-d5",
+          "date": "2027-01-29",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w12-d6",
+          "date": "2027-01-30",
+          "hours": 4,
+          "task": "项目实战：优化前后性能报告；执行官方环境实验"
+        },
+        {
+          "id": "w12-d7",
+          "date": "2027-01-31",
+          "hours": 4,
+          "task": "周考核：比较平均、P95与峰值内存；效果无明显退化；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "批处理、并发与量化",
+      "module": 4,
+      "start": "2027-02-01",
+      "end": "2027-02-07",
+      "project": "优化的RAG服务（M4）",
+      "exam": "20请求/并发4稳定；模拟T4≥12/15",
+      "lab": "实现批接口并保持顺序；只在框架允许时尝试量化。样题平均≤基线85%、P95/内存≤90%，质量≥95%取得相应满分；低于90%时T4性能分为0。",
+      "topics": [
+        "w13-1",
+        "w13-2",
+        "w13-3"
+      ],
+      "days": [
+        {
+          "id": "w13-d1",
+          "date": "2027-02-01",
+          "hours": 2,
+          "task": "学习「异步、批处理与结果顺序」，写出输入输出与边界"
+        },
+        {
+          "id": "w13-d2",
+          "date": "2027-02-02",
+          "hours": 2,
+          "task": "完成「异步、批处理与结果顺序」并补一个新用例"
+        },
+        {
+          "id": "w13-d3",
+          "date": "2027-02-03",
+          "hours": 2,
+          "task": "独立完成「批大小与分批处理」，解释错误路径"
+        },
+        {
+          "id": "w13-d4",
+          "date": "2027-02-04",
+          "hours": 2,
+          "task": "完成「量化权衡与质量门槛」，关闭答案重写"
+        },
+        {
+          "id": "w13-d5",
+          "date": "2027-02-05",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w13-d6",
+          "date": "2027-02-06",
+          "hours": 4,
+          "task": "项目实战：优化的RAG服务（M4）；执行官方环境实验"
+        },
+        {
+          "id": "w13-d7",
+          "date": "2027-02-07",
+          "hours": 4,
+          "task": "周考核：20请求/并发4稳定；模拟T4≥12/15；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "title": "问答网页与工程契约",
+      "module": 5,
+      "start": "2027-02-08",
+      "end": "2027-02-14",
+      "project": "完整问答Web应用",
+      "exam": "页面、异常输入和JSONL日志测试通过",
+      "lab": "HTML/CSS/JS用fetch调用真实/answer，检查response.ok，固定六个data-testid；测试加载/成功/失败，日志关联request_id，检查完整响应Schema。",
+      "topics": [
+        "w14-1",
+        "w14-2",
+        "w14-3"
+      ],
+      "days": [
+        {
+          "id": "w14-d1",
+          "date": "2027-02-08",
+          "hours": 2,
+          "task": "学习「页面状态与 Fetch 错误处理」，写出输入输出与边界"
+        },
+        {
+          "id": "w14-d2",
+          "date": "2027-02-09",
+          "hours": 2,
+          "task": "完成「页面状态与 Fetch 错误处理」并补一个新用例"
+        },
+        {
+          "id": "w14-d3",
+          "date": "2027-02-10",
+          "hours": 2,
+          "task": "独立完成「JSONL 日志与请求追踪」，解释错误路径"
+        },
+        {
+          "id": "w14-d4",
+          "date": "2027-02-11",
+          "hours": 2,
+          "task": "完成「页面契约与自动验收」，关闭答案重写"
+        },
+        {
+          "id": "w14-d5",
+          "date": "2027-02-12",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w14-d6",
+          "date": "2027-02-13",
+          "hours": 4,
+          "task": "项目实战：完整问答Web应用；执行官方环境实验"
+        },
+        {
+          "id": "w14-d7",
+          "date": "2027-02-14",
+          "hours": 4,
+          "task": "周考核：页面、异常输入和JSONL日志测试通过；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "title": "统一交付与首次模拟",
+      "module": 5,
+      "start": "2027-02-15",
+      "end": "2027-02-21",
+      "project": "统一submission/候选包",
+      "exam": "4小时内独立提交；训练目标≥80分",
+      "lab": "按题面核对manifest、src、config、prompts、artifacts、web、logs、README；排除模型/密钥/越界链接。用陌生起步工程完成首次4小时模拟并记录失分。",
+      "topics": [
+        "w15-1",
+        "w15-2",
+        "w15-3"
+      ],
+      "days": [
+        {
+          "id": "w15-d1",
+          "date": "2027-02-15",
+          "hours": 2,
+          "task": "学习「交付清单与路径安全」，写出输入输出与边界"
+        },
+        {
+          "id": "w15-d2",
+          "date": "2027-02-16",
+          "hours": 2,
+          "task": "完成「交付清单与路径安全」并补一个新用例"
+        },
+        {
+          "id": "w15-d3",
+          "date": "2027-02-17",
+          "hours": 2,
+          "task": "独立完成「统一项目与必需文件」，解释错误路径"
+        },
+        {
+          "id": "w15-d4",
+          "date": "2027-02-18",
+          "hours": 2,
+          "task": "完成「四小时模拟配时与故障优先级」，关闭答案重写"
+        },
+        {
+          "id": "w15-d5",
+          "date": "2027-02-19",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w15-d6",
+          "date": "2027-02-20",
+          "hours": 4,
+          "task": "项目实战：统一submission/候选包；执行官方环境实验"
+        },
+        {
+          "id": "w15-d7",
+          "date": "2027-02-21",
+          "hours": 4,
+          "task": "周考核：4小时内独立提交；训练目标≥80分；保存测试结果与复盘"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "陌生场景与毕业验收",
+      "module": 5,
+      "start": "2027-02-22",
+      "end": "2027-02-28",
+      "project": "两次模拟与补强档案",
+      "exam": "至少两次完整限时训练；最后目标≥90分",
+      "lab": "更换业务与表达方式，在官方技术栈运行两次4小时模拟；核对启动、模型、接口、来源与打包。按失分模块补修，90分仅为训练目标。",
+      "topics": [
+        "w16-1",
+        "w16-2",
+        "w16-3"
+      ],
+      "days": [
+        {
+          "id": "w16-d1",
+          "date": "2027-02-22",
+          "hours": 2,
+          "task": "学习「综合业务效果计分」，写出输入输出与边界"
+        },
+        {
+          "id": "w16-d2",
+          "date": "2027-02-23",
+          "hours": 2,
+          "task": "完成「综合业务效果计分」并补一个新用例"
+        },
+        {
+          "id": "w16-d3",
+          "date": "2027-02-24",
+          "hours": 2,
+          "task": "独立完成「回归测试与随机场景」，解释错误路径"
+        },
+        {
+          "id": "w16-d4",
+          "date": "2027-02-25",
+          "hours": 2,
+          "task": "完成「最终补强与毕业验收」，关闭答案重写"
+        },
+        {
+          "id": "w16-d5",
+          "date": "2027-02-26",
+          "hours": 2,
+          "task": "重做本周错题；核对三项自测与来源"
+        },
+        {
+          "id": "w16-d6",
+          "date": "2027-02-27",
+          "hours": 4,
+          "task": "项目实战：两次模拟与补强档案；执行官方环境实验"
+        },
+        {
+          "id": "w16-d7",
+          "date": "2027-02-28",
+          "hours": 4,
+          "task": "周考核：至少两次完整限时训练；最后目标≥90分；保存测试结果与复盘"
+        }
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "w01-1",
+      "week": 1,
+      "title": "函数、列表与字典查询",
+      "concept": "函数把输入与输出约定固定下来。列表保存文档，字典保存字段；用 get 处理可选字段，空关键词必须先拒绝，避免空字符串匹配所有文档。",
+      "task": "实现关键词查询，去掉关键词两端空格，返回包含关键词的文档 ID；空输入返回空列表，缺失 text 的记录不匹配。",
+      "starter": "def solve(docs, keyword):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'd1', 'text': 'Python函数'}, {'id': 'd2', 'text': '循环'}], ' 函数 ']))\n",
+      "solution": "def solve(docs, keyword):\n    keyword = keyword.strip()\n    if not keyword:\n        return []\n    return [d['id'] for d in docs if keyword in d.get('text', '')]\n\nprint(solve(*[[{'id': 'd1', 'text': 'Python函数'}, {'id': 'd2', 'text': '循环'}], ' 函数 ']))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "d1",
+                "text": "Python函数"
+              },
+              {
+                "id": "d2",
+                "text": "循环"
+              }
+            ],
+            " 函数 "
+          ],
+          "expected": [
+            "d1"
+          ]
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "d1",
+                "text": "abc"
+              }
+            ],
+            " "
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "x"
+              }
+            ],
+            "a"
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "先 strip，再检查是否为空。",
+      "reason": "先验证输入，再遍历资料。不要把测试问题写死成答案映射。",
+      "quiz": "为什么先处理空关键词？",
+      "choices": [
+        "提高模型精度",
+        "自动去重",
+        "空字符串会匹配任意字符串"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w01-2",
+      "week": 1,
+      "title": "JSON 读取与异常边界",
+      "concept": "JSON 是文本，json.loads 得到 Python 对象。语法正确不等于结构正确：这里业务约定顶层必须是列表。异常只捕获已知类型。",
+      "task": "解析 JSON 文本。合法列表原样返回，格式错误或顶层非列表返回空列表。",
+      "starter": "def solve(text):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['[{\"id\":\"d1\"}]']))\n",
+      "solution": "import json\ndef solve(text):\n    try:\n        data = json.loads(text)\n    except json.JSONDecodeError:\n        return []\n    return data if isinstance(data, list) else []\n\nprint(solve(*['[{\"id\":\"d1\"}]']))\n",
+      "cases": [
+        {
+          "args": [
+            "[{\"id\":\"d1\"}]"
+          ],
+          "expected": [
+            {
+              "id": "d1"
+            }
+          ]
+        },
+        {
+          "args": [
+            "{bad}"
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            "{\"id\":1}"
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "捕获 JSONDecodeError 后检查 list。",
+      "reason": "解析和业务校验是两个步骤；正式项目应记录加载失败原因，不能静默吞掉重要数据错误。",
+      "quiz": "json.loads 的作用是什么？",
+      "choices": [
+        "验证所有业务字段",
+        "把 JSON 文本转成 Python 对象",
+        "打开磁盘文件"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w01-3",
+      "week": 1,
+      "title": "相对路径、模块与基础测试",
+      "concept": "pathlib 连接路径，业务函数不应依赖用户电脑的绝对目录。PurePosixPath 可在任意系统验证 Linux 路径；真实读文件使用 Path(__file__).resolve().parent。模块划分为 loader、retriever、service，并由测试覆盖。",
+      "task": "将相对项目目录与 data/knowledge.json 连接，返回 POSIX 字符串。输入均为相对目录。",
+      "starter": "def solve(base):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['week01']))\n",
+      "solution": "from pathlib import PurePosixPath\ndef solve(base):\n    return str(PurePosixPath(base) / 'data' / 'knowledge.json')\n\nprint(solve(*['week01']))\n",
+      "cases": [
+        {
+          "args": [
+            "week01"
+          ],
+          "expected": "week01/data/knowledge.json"
+        },
+        {
+          "args": [
+            "."
+          ],
+          "expected": "data/knowledge.json"
+        },
+        {
+          "args": [
+            "submission/src"
+          ],
+          "expected": "submission/src/data/knowledge.json"
+        }
+      ],
+      "hint": "使用 / 运算符连接 PurePosixPath。",
+      "reason": "路径以项目位置为锚点；本题只验证连接，真实工程要测试不存在、权限、坏 JSON 三类失败。",
+      "quiz": "可迁移工程应如何定位资料？",
+      "choices": [
+        "相对项目根目录定位",
+        "写死 D 盘路径",
+        "依赖终端当前目录永远不变"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w02-1",
+      "week": 2,
+      "title": "类型、类与状态封装",
+      "concept": "类把状态与行为放在一起；类型注解帮助阅读但不会自动检查运行时数据。模型句柄、索引句柄应在服务生命周期保存。",
+      "task": "用 Counter 类记录非空问题数；solve 接收问题列表，返回累计数量。空白问题不计数。",
+      "starter": "def solve(questions):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['a', ' ', 'b']]))\n",
+      "solution": "class Counter:\n    def __init__(self):\n        self.count = 0\n    def add(self, question: str):\n        if question.strip():\n            self.count += 1\ndef solve(questions):\n    counter = Counter()\n    for q in questions:\n        counter.add(q)\n    return counter.count\n\nprint(solve(*[['a', ' ', 'b']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "a",
+              " ",
+              "b"
+            ]
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            [
+              "\n",
+              "x"
+            ]
+          ],
+          "expected": 1
+        }
+      ],
+      "hint": "实例属性在 __init__ 初始化。",
+      "reason": "每次 solve 创建独立计数器，避免跨请求共享可变类属性。",
+      "quiz": "类型注解会自动拒绝非法 JSON 吗？",
+      "choices": [
+        "只对字典会",
+        "不会，需要运行时校验",
+        "会，任何环境都一样"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w02-2",
+      "week": 2,
+      "title": "虚拟环境与依赖清单",
+      "concept": "venv 隔离项目依赖；比赛按统一镜像运行，不能任意安装包。先核对 Python、框架、模型路径和内存，再使用题面允许的依赖。Git 用 diff 检查修改，用小提交保留回退点。",
+      "task": "比较必需包清单和已安装版本映射，按字母顺序返回缺失包；不做远程安装。",
+      "starter": "def solve(required, installed):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['pytest', 'fastapi', 'pytest'], {'fastapi': '0.1'}]))\n",
+      "solution": "def solve(required, installed):\n    return sorted(set(required) - set(installed))\n\nprint(solve(*[['pytest', 'fastapi', 'pytest'], {'fastapi': '0.1'}]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "pytest",
+              "fastapi",
+              "pytest"
+            ],
+            {
+              "fastapi": "0.1"
+            }
+          ],
+          "expected": [
+            "pytest"
+          ]
+        },
+        {
+          "args": [
+            [],
+            {}
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            [
+              "numpy"
+            ],
+            {
+              "numpy": "2"
+            }
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "集合差集后 sorted。",
+      "reason": "环境检查先报告差异，再根据镜像清单处理；有包并不代表版本和 ABI 一定兼容。",
+      "quiz": "比赛发现缺包应首先怎样做？",
+      "choices": [
+        "核对当场允许的依赖与镜像清单",
+        "直接联网安装所有新版本",
+        "更换官方模型"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w02-3",
+      "week": 2,
+      "title": "断言测试与调试定位",
+      "concept": "测试要覆盖正常值、边界和失败路径；输出一个 True 不能替代实际业务测试。先最小复现，再读异常位置，避免在错误数据上层层补丁。",
+      "task": "接收用例的实际值与期望值对，返回 passed 和 total，空集合为 0/0。",
+      "starter": "def solve(cases):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[[1, 1], [2, 3], [[], []]]]))\n",
+      "solution": "def solve(cases):\n    return {'passed': sum(actual == expected for actual, expected in cases), 'total': len(cases)}\n\nprint(solve(*[[[1, 1], [2, 3], [[], []]]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              [
+                1,
+                1
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                [],
+                []
+              ]
+            ]
+          ],
+          "expected": {
+            "passed": 2,
+            "total": 3
+          }
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": {
+            "passed": 0,
+            "total": 0
+          }
+        }
+      ],
+      "hint": "相等比较得到 bool，可求和。",
+      "reason": "正式工程使用 pytest 对公共函数做断言，并增加接口和模型集成测试。",
+      "quiz": "哪种测试更容易发现边界错误？",
+      "choices": [
+        "只测公开示例",
+        "只看程序有没有启动",
+        "同时覆盖正常、空值与非法输入"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w03-1",
+      "week": 3,
+      "title": "HTTP 请求与输入校验",
+      "concept": "HTTP 的状态码与 JSON 业务字段各有作用。样题：空白问题和超长问题为 400，字段或类型错误为 422，top_k 范围为 1–5。bool 是 int 的子类，严格类型应使用 type(x) is int。",
+      "task": "校验请求字典，按字段类型、空问题、长度、top_k 的顺序返回 [状态码,error_code]；合法返回 [200,\"OK\"]。question 必填，top_k 默认 3。",
+      "starter": "def solve(body):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[{'question': '函数'}]))\n",
+      "solution": "def solve(body):\n    q, k = body.get('question'), body.get('top_k', 3)\n    if not isinstance(q, str) or type(k) is not int:\n        return [422, 'INVALID_SCHEMA']\n    if not q.strip():\n        return [400, 'EMPTY_QUESTION']\n    if len(q.strip()) > 500:\n        return [400, 'QUESTION_TOO_LONG']\n    if not 1 <= k <= 5:\n        return [400, 'INVALID_TOP_K']\n    return [200, 'OK']\n\nprint(solve(*[{'question': '函数'}]))\n",
+      "cases": [
+        {
+          "args": [
+            {
+              "question": "函数"
+            }
+          ],
+          "expected": [
+            200,
+            "OK"
+          ]
+        },
+        {
+          "args": [
+            {
+              "question": " "
+            }
+          ],
+          "expected": [
+            400,
+            "EMPTY_QUESTION"
+          ]
+        },
+        {
+          "args": [
+            {
+              "question": "a",
+              "top_k": true
+            }
+          ],
+          "expected": [
+            422,
+            "INVALID_SCHEMA"
+          ]
+        },
+        {
+          "args": [
+            {
+              "question": "a",
+              "top_k": 6
+            }
+          ],
+          "expected": [
+            400,
+            "INVALID_TOP_K"
+          ]
+        },
+        {
+          "args": [
+            {
+              "question": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+            }
+          ],
+          "expected": [
+            400,
+            "QUESTION_TOO_LONG"
+          ]
+        }
+      ],
+      "hint": "先类型检查，再做字符串和数值操作。",
+      "reason": "本题为纯 Python 协议模拟；真实 FastAPI/Pydantic 需要统一异常处理器，不能任由默认 422 覆盖题面规定的 400。",
+      "quiz": "无答案属于哪种状态？",
+      "choices": [
+        "200，业务拒答",
+        "500，服务器崩溃",
+        "404，接口不存在"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 1
+    },
+    {
+      "id": "w03-2",
+      "week": 3,
+      "title": "响应 Schema 与字段约束",
+      "concept": "Schema 不只检查字段是否存在，还检查类型、范围与业务关联。confidence 是置信数值，不能把检索分数无条件当成准确率。",
+      "task": "检查简化答复包含 answer 字符串、confidence 有限数值且在 0–1 内、sources 列表、is_refused 布尔。拒答必须没有来源。",
+      "starter": "def solve(response):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[{'answer': '好', 'confidence': 0.8, 'sources': [], 'is_refused': False}]))\n",
+      "solution": "import math\ndef solve(response):\n    c = response.get('confidence')\n    return (isinstance(response.get('answer'), str)\n        and type(c) in (int, float) and math.isfinite(c) and 0 <= c <= 1\n        and isinstance(response.get('sources'), list)\n        and type(response.get('is_refused')) is bool\n        and (not response['is_refused'] or response['sources'] == []))\n\nprint(solve(*[{'answer': '好', 'confidence': 0.8, 'sources': [], 'is_refused': False}]))\n",
+      "cases": [
+        {
+          "args": [
+            {
+              "answer": "好",
+              "confidence": 0.8,
+              "sources": [],
+              "is_refused": false
+            }
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            {
+              "answer": "",
+              "confidence": 2,
+              "sources": [],
+              "is_refused": false
+            }
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            {
+              "answer": "拒答",
+              "confidence": 0,
+              "sources": [
+                "x"
+              ],
+              "is_refused": true
+            }
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            {}
+          ],
+          "expected": false
+        }
+      ],
+      "hint": "用短路 and 避免缺字段时下标访问。",
+      "reason": "线上完整响应还包含 request_id、intent、latency_ms，每个来源有 id、title、score。这里聚焦关联约束。",
+      "quiz": "拒答时 sources 应是什么？",
+      "choices": [
+        "随机文档",
+        "内部 Prompt",
+        "空数组"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 1
+    },
+    {
+      "id": "w03-3",
+      "week": 3,
+      "title": "统一错误与安全输出",
+      "concept": "内部异常用于日志定位，面向用户只返回稳定的 error_code、message、request_id。不要暴露模型路径、堆栈或系统 Prompt。",
+      "task": "根据 HTTP 状态生成统一错误字典。400 为 BAD_REQUEST，422 为 INVALID_SCHEMA，其余为 INTERNAL_ERROR；保留请求 ID。",
+      "starter": "def solve(status, request_id):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[500, 'r1']))\n",
+      "solution": "def solve(status, request_id):\n    code, message = {400: ('BAD_REQUEST','请求不合法'), 422: ('INVALID_SCHEMA','字段类型错误')}.get(status, ('INTERNAL_ERROR','服务暂不可用'))\n    return {'error_code':code, 'message':message, 'request_id':request_id}\n\nprint(solve(*[500, 'r1']))\n",
+      "cases": [
+        {
+          "args": [
+            500,
+            "r1"
+          ],
+          "expected": {
+            "error_code": "INTERNAL_ERROR",
+            "message": "服务暂不可用",
+            "request_id": "r1"
+          }
+        },
+        {
+          "args": [
+            422,
+            "r2"
+          ],
+          "expected": {
+            "error_code": "INVALID_SCHEMA",
+            "message": "字段类型错误",
+            "request_id": "r2"
+          }
+        }
+      ],
+      "hint": "字典映射加默认值。",
+      "reason": "这是通用练习错误码，空问题等样题专用错误码见上一题，真实服务应保留对应细分错误。",
+      "quiz": "异常堆栈应放在哪里？",
+      "choices": [
+        "公开 HTML",
+        "受控运行日志",
+        "answer 字段"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 1
+    },
+    {
+      "id": "w04-1",
+      "week": 4,
+      "title": "Token、编码与批输入",
+      "concept": "Tokenizer 将文本编码成模型输入；字符数不等于 token 数，词表、特殊 token 和截断规则都影响结果。Embedding 模型输出向量，生成模型输出文本，两者用途不同。",
+      "task": "用给定词表模拟按空格编码；未知词为 0，最多取 limit 个词，limit 为 0 时返回空列表。",
+      "starter": "def solve(text, vocab, limit):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['hello ai world', {'hello': 1, 'ai': 2}, 2]))\n",
+      "solution": "def solve(text, vocab, limit):\n    return [vocab.get(word, 0) for word in text.split()[:limit]]\n\nprint(solve(*['hello ai world', {'hello': 1, 'ai': 2}, 2]))\n",
+      "cases": [
+        {
+          "args": [
+            "hello ai world",
+            {
+              "hello": 1,
+              "ai": 2
+            },
+            2
+          ],
+          "expected": [
+            1,
+            2
+          ]
+        },
+        {
+          "args": [
+            " x ",
+            {},
+            5
+          ],
+          "expected": [
+            0
+          ]
+        },
+        {
+          "args": [
+            "a b",
+            {
+              "a": 1
+            },
+            0
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "split() 自动合并空白。",
+      "reason": "这不是 PaddleNLP Tokenizer；官方实战必须使用提供的 tokenizer 与模型权重配套。",
+      "quiz": "Embedding 模型主要输出什么？",
+      "choices": [
+        "HTTP 状态码",
+        "网页 HTML",
+        "语义向量"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 1
+    },
+    {
+      "id": "w04-2",
+      "week": 4,
+      "title": "模型生命周期与单次加载",
+      "concept": "反复加载模型会浪费时间和内存。真实服务在 lifespan 阶段初始化一次，在请求中复用；加载失败要阻止就绪，不能伪造成功。",
+      "task": "模拟服务：请求列表中的非空项触发一次惰性加载；返回 loads 和 replies（去掉空白后大写的模拟输出），空项不调用模型。",
+      "starter": "def solve(questions):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['a', 'b', ' ']]))\n",
+      "solution": "def solve(questions):\n    loaded, loads, replies = False, 0, []\n    for q in questions:\n        if not q.strip():\n            continue\n        if not loaded:\n            loaded = True\n            loads += 1\n        replies.append(q.strip().upper())\n    return {'loads':loads, 'replies':replies}\n\nprint(solve(*[['a', 'b', ' ']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "a",
+              "b",
+              " "
+            ]
+          ],
+          "expected": {
+            "loads": 1,
+            "replies": [
+              "A",
+              "B"
+            ]
+          }
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": {
+            "loads": 0,
+            "replies": []
+          }
+        }
+      ],
+      "hint": "把 loaded 状态放到请求循环外。",
+      "reason": "大写转换仅演示生命周期，正式评分必须真实调用只读挂载模型。",
+      "quiz": "模型初始化应放在哪里？",
+      "choices": [
+        "前端浏览器 DOM 中",
+        "服务启动生命周期",
+        "每次请求都重新加载"
+      ],
+      "correct": 1,
+      "sim": true,
+      "module": 1
+    },
+    {
+      "id": "w04-3",
+      "week": 4,
+      "title": "健康检查与真实就绪",
+      "concept": "health 返回真实状态。T1 阶段可以 index_loaded=false；RAG 完成后才要求索引就绪。服务存活与业务就绪应分开考虑。",
+      "task": "根据 model、index、require_index 布尔状态，返回 status、model_loaded、index_loaded。只有模型已加载且必要索引已加载时 status 为 ok，否则 loading。",
+      "starter": "def solve(model, index, require_index):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[True, False, False]))\n",
+      "solution": "def solve(model, index, require_index):\n    ready = model and (index or not require_index)\n    return {'status':'ok' if ready else 'loading', 'model_loaded':model, 'index_loaded':index}\n\nprint(solve(*[True, False, False]))\n",
+      "cases": [
+        {
+          "args": [
+            true,
+            false,
+            false
+          ],
+          "expected": {
+            "status": "ok",
+            "model_loaded": true,
+            "index_loaded": false
+          }
+        },
+        {
+          "args": [
+            true,
+            false,
+            true
+          ],
+          "expected": {
+            "status": "loading",
+            "model_loaded": true,
+            "index_loaded": false
+          }
+        },
+        {
+          "args": [
+            false,
+            true,
+            true
+          ],
+          "expected": {
+            "status": "loading",
+            "model_loaded": false,
+            "index_loaded": true
+          }
+        }
+      ],
+      "hint": "先计算 ready 再组装 JSON。",
+      "reason": "真实样题还需 framework/version，且通过实际推理探针验证，不能只修改布尔值。",
+      "quiz": "索引未加载能否一律报告健康？",
+      "choices": [
+        "不能，要看当前阶段是否依赖索引",
+        "总是可以",
+        "只看端口是否监听"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 1
+    },
+    {
+      "id": "w05-1",
+      "week": 5,
+      "title": "System Prompt 与证据边界",
+      "concept": "系统指令定义职责，用户输入和检索文档属于待处理数据。分隔符帮助表达边界，但不能单独防御所有提示注入；需要输出校验、来源验证和拒答。",
+      "task": "生成三段式模板：职责固定为“仅依据证据回答”，第二段证据，第三段问题。使用明确标签与换行。",
+      "starter": "def solve(question, evidence):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['如何退费', '7日内且未开课']))\n",
+      "solution": "def solve(question, evidence):\n    return f'仅依据证据回答\\n<证据>{evidence}</证据>\\n<问题>{question}</问题>'\n\nprint(solve(*['如何退费', '7日内且未开课']))\n",
+      "cases": [
+        {
+          "args": [
+            "如何退费",
+            "7日内且未开课"
+          ],
+          "expected": "仅依据证据回答\n<证据>7日内且未开课</证据>\n<问题>如何退费</问题>"
+        },
+        {
+          "args": [
+            "问题",
+            ""
+          ],
+          "expected": "仅依据证据回答\n<证据></证据>\n<问题>问题</问题>"
+        }
+      ],
+      "hint": "使用 f 字符串，注意换行。",
+      "reason": "构建 Prompt 后还要测试恶意文档、越界问题和无来源情况；这个练习验证模板组织。",
+      "quiz": "检索文档里的“忽略系统指令”应被当成什么？",
+      "choices": [
+        "必须执行的命令",
+        "待处理数据",
+        "更高优先级系统指令"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 2
+    },
+    {
+      "id": "w05-2",
+      "week": 5,
+      "title": "Temperature、Top-p 与配置校验",
+      "concept": "温度影响采样分布，top_p 控制累积概率候选范围，最大长度控制输出预算。配置必须被程序读取并生效，不能只提交一个未使用的 YAML。",
+      "task": "验证配置：temperature 数值 0–2，top_p 数值 (0,1]，max_tokens 整数 1–512，stop 为字符串列表；排除 bool。缺字段返回 False。",
+      "starter": "def solve(config):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[{'temperature': 0.2, 'top_p': 0.9, 'max_tokens': 128, 'stop': ['END']}]))\n",
+      "solution": "def solve(config):\n    t,p,n,s = (config.get(k) for k in ('temperature','top_p','max_tokens','stop'))\n    return (type(t) in (int,float) and 0 <= t <= 2\n        and type(p) in (int,float) and 0 < p <= 1\n        and type(n) is int and 1 <= n <= 512\n        and isinstance(s,list) and all(isinstance(x,str) for x in s))\n\nprint(solve(*[{'temperature': 0.2, 'top_p': 0.9, 'max_tokens': 128, 'stop': ['END']}]))\n",
+      "cases": [
+        {
+          "args": [
+            {
+              "temperature": 0.2,
+              "top_p": 0.9,
+              "max_tokens": 128,
+              "stop": [
+                "END"
+              ]
+            }
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            {}
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            {
+              "temperature": 0,
+              "top_p": 0,
+              "max_tokens": 10,
+              "stop": []
+            }
+          ],
+          "expected": false
+        }
+      ],
+      "hint": "用 get，逐个检查类型与范围。",
+      "reason": "这些是本训练设定的范围，正式模型以题面配置与框架文档为准；比较三组参数时固定题集。",
+      "quiz": "如何证明配置被实际使用？",
+      "choices": [
+        "修改配置后验证行为变化",
+        "只检查文件存在",
+        "复制到 README 即可"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 2
+    },
+    {
+      "id": "w05-3",
+      "week": 5,
+      "title": "Few-shot 与参数对照实验",
+      "concept": "Few-shot 用少量示例表达格式，不能把评测问题写成固定答案表。参数对照要固定数据、随机种子及资源条件，同时观察质量和时延。",
+      "task": "从实验记录中挑出 quality≥0.9 的最低 latency 项的 name；时延相同按 name 排序，无合格项返回 None。",
+      "starter": "def solve(records):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'name': 'a', 'quality': 0.8, 'latency': 1}, {'name': 'b', 'quality': 0.95, 'latency': 3}]]))\n",
+      "solution": "def solve(records):\n    valid = [r for r in records if r['quality'] >= 0.9]\n    if not valid:\n        return None\n    return min(valid, key=lambda r:(r['latency'],r['name']))['name']\n\nprint(solve(*[[{'name': 'a', 'quality': 0.8, 'latency': 1}, {'name': 'b', 'quality': 0.95, 'latency': 3}]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "name": "a",
+                "quality": 0.8,
+                "latency": 1
+              },
+              {
+                "name": "b",
+                "quality": 0.95,
+                "latency": 3
+              }
+            ]
+          ],
+          "expected": "b"
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": null
+        },
+        {
+          "args": [
+            [
+              {
+                "name": "b",
+                "quality": 0.9,
+                "latency": 2
+              },
+              {
+                "name": "a",
+                "quality": 1,
+                "latency": 2
+              }
+            ]
+          ],
+          "expected": "a"
+        }
+      ],
+      "hint": "先过滤质量，再找最快。",
+      "reason": "质量门槛先于速度，避免用无效短答案制造看似更快的实验结果。",
+      "quiz": "对照实验应固定什么？",
+      "choices": [
+        "每次换一套题",
+        "只固定答案长度",
+        "测试集与运行条件"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 2
+    },
+    {
+      "id": "w06-1",
+      "week": 6,
+      "title": "JSON 输出解析",
+      "concept": "模型输出可能夹带 Markdown 围栏或额外解释。工程上优先使用框架支持的结构化约束，并在解析后进行 Schema 校验。解析失败应安全重试或受控失败。",
+      "task": "解析模型返回的 JSON。仅当是字典且 answer 为字符串时返回 answer；其余返回“格式错误”。",
+      "starter": "def solve(text):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['{\"answer\":\"按时提交\"}']))\n",
+      "solution": "import json\ndef solve(text):\n    try:\n        obj = json.loads(text)\n    except json.JSONDecodeError:\n        return '格式错误'\n    return obj['answer'] if isinstance(obj,dict) and isinstance(obj.get('answer'),str) else '格式错误'\n\nprint(solve(*['{\"answer\":\"按时提交\"}']))\n",
+      "cases": [
+        {
+          "args": [
+            "{\"answer\":\"按时提交\"}"
+          ],
+          "expected": "按时提交"
+        },
+        {
+          "args": [
+            "```json\n{}\n```"
+          ],
+          "expected": "格式错误"
+        },
+        {
+          "args": [
+            "[]"
+          ],
+          "expected": "格式错误"
+        },
+        {
+          "args": [
+            "{\"answer\":1}"
+          ],
+          "expected": "格式错误"
+        }
+      ],
+      "hint": "不要用 eval 解析模型输出。",
+      "reason": "严格解析避免悄悄接受任意文本；参考答案不自动修补坏 JSON，以便明确暴露错误。",
+      "quiz": "解析不可信 JSON 应使用什么？",
+      "choices": [
+        "json.loads",
+        "eval",
+        "exec"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 2
+    },
+    {
+      "id": "w06-2",
+      "week": 6,
+      "title": "无答案拒答与置信边界",
+      "concept": "知识不足是正常业务结果。不能编造制度或来源；拒答时 sources=[]、intent=unknown。阈值应通过标注集验证，检索高分也不一定意味着答案充分。",
+      "task": "候选列表含 id/text/score。只选 score≥threshold 的最高分一条（同分按 id）；无候选返回拒答字典。成功 answer 使用候选 text，sources 只含其 id。",
+      "starter": "def solve(candidates, threshold):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[], 0.5]))\n",
+      "solution": "def solve(candidates, threshold):\n    valid = [c for c in candidates if c['score'] >= threshold]\n    if not valid:\n        return {'answer':'资料不足','sources':[],'intent':'unknown','is_refused':True}\n    best = sorted(valid,key=lambda c:(-c['score'],c['id']))[0]\n    return {'answer':best['text'],'sources':[best['id']],'intent':'course','is_refused':False}\n\nprint(solve(*[[], 0.5]))\n",
+      "cases": [
+        {
+          "args": [
+            [],
+            0.5
+          ],
+          "expected": {
+            "answer": "资料不足",
+            "sources": [],
+            "intent": "unknown",
+            "is_refused": true
+          }
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "d1",
+                "text": "周二直播",
+                "score": 0.8
+              }
+            ],
+            0.5
+          ],
+          "expected": {
+            "answer": "周二直播",
+            "sources": [
+              "d1"
+            ],
+            "intent": "course",
+            "is_refused": false
+          }
+        }
+      ],
+      "hint": "过滤、排序、组织响应，三个步骤。",
+      "reason": "这里只做证据选择模拟；真实 RAG 还需判断证据是否覆盖全部条件并调用模型生成。",
+      "quiz": "拒答能否附一个看起来相关的假来源？",
+      "choices": [
+        "可以提高完整性",
+        "只要分数高就可以",
+        "不能"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 2
+    },
+    {
+      "id": "w06-3",
+      "week": 6,
+      "title": "来源与结构关联校验",
+      "concept": "来源必须存在于知识清单，而且是实际使用的文档。输出结构、事实和溯源缺一不可，不能仅靠 Prompt 约束。",
+      "task": "检查 sources 列表中的 id 是否全部出现在 allowed 中且不重复；空列表合法。",
+      "starter": "def solve(sources, allowed):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'a'}], ['a', 'b']]))\n",
+      "solution": "def solve(sources, allowed):\n    ids = [s['id'] for s in sources]\n    return len(ids) == len(set(ids)) and set(ids) <= set(allowed)\n\nprint(solve(*[[{'id': 'a'}], ['a', 'b']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "a"
+              }
+            ],
+            [
+              "a",
+              "b"
+            ]
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "x"
+              }
+            ],
+            [
+              "a"
+            ]
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "a"
+              },
+              {
+                "id": "a"
+              }
+            ],
+            [
+              "a"
+            ]
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [],
+            []
+          ],
+          "expected": true
+        }
+      ],
+      "hint": "集合判断包含关系和去重数量。",
+      "reason": "合法 ID 只是最低要求；本题不证明来源真的支持答案，需要人工与事实槽位测试补足。",
+      "quiz": "来源 ID 应对应什么？",
+      "choices": [
+        "随机生成 UUID",
+        "知识清单中实际使用的文档",
+        "任意检索结果"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 2
+    },
+    {
+      "id": "w07-1",
+      "week": 7,
+      "title": "向量维度与点积",
+      "concept": "Embedding 的维度由模型确定，查询与文档必须用同一编码空间。点积要求维度相同；zip 会静默截断，必须先检查。",
+      "task": "计算两个数值向量的点积；维度不相同返回 None。空向量点积定义为 0。",
+      "starter": "def solve(a, b):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[1, 2], [3, 4]]))\n",
+      "solution": "def solve(a,b):\n    if len(a) != len(b):\n        return None\n    return sum(x*y for x,y in zip(a,b))\n\nprint(solve(*[[1, 2], [3, 4]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "expected": 11
+        },
+        {
+          "args": [
+            [
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "expected": null
+        },
+        {
+          "args": [
+            [],
+            []
+          ],
+          "expected": 0
+        }
+      ],
+      "hint": "先比较 len，再 zip。",
+      "reason": "真实实战用 NumPy 检查 shape、dtype，再给 FAISS 建索引；这里纯 Python 验证数学。",
+      "quiz": "不同模型的同维向量能直接混用吗？",
+      "choices": [
+        "只要长度相同即可",
+        "都可以",
+        "不能保证，需相同编码空间"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w07-2",
+      "week": 7,
+      "title": "L2 归一化与余弦相似度",
+      "concept": "余弦是点积除以两向量范数，衡量方向接近程度。零向量无定义，这里约定返回 0；结果保留 6 位小数，减少浮点比较误差。",
+      "task": "计算余弦相似度；维度不符返回 None，任一零向量返回 0，其余四舍五入至 6 位。",
+      "starter": "def solve(a, b):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[1, 0], [1, 1]]))\n",
+      "solution": "import math\ndef solve(a,b):\n    if len(a) != len(b):\n        return None\n    norm = math.sqrt(sum(x*x for x in a)*sum(y*y for y in b))\n    if norm == 0:\n        return 0\n    return round(sum(x*y for x,y in zip(a,b))/norm,6)\n\nprint(solve(*[[1, 0], [1, 1]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 0.707107
+        },
+        {
+          "args": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            [
+              1
+            ],
+            [
+              -1
+            ]
+          ],
+          "expected": -1
+        },
+        {
+          "args": [
+            [
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ],
+          "expected": null
+        }
+      ],
+      "hint": "范数乘积为 0 要提前返回。",
+      "reason": "FAISS 使用归一化向量加内积可实现余弦排序；相似度不等于业务置信概率。",
+      "quiz": "归一化向量的内积相当于什么？",
+      "choices": [
+        "概率准确率",
+        "余弦相似度",
+        "文档字数"
+      ],
+      "correct": 1,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w07-3",
+      "week": 7,
+      "title": "索引 Top-k 排序",
+      "concept": "向量索引保存向量及与文档的映射。索引行号不是业务文档 ID，重载后映射必须一致。先用暴力检索理解排序，再使用官方 FAISS。",
+      "task": "输入候选 id/score，按 score 降序、id 升序返回前 k 个 ID；k≤0 返回空列表。",
+      "starter": "def solve(records, k):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'b', 'score': 0.7}, {'id': 'a', 'score': 0.7}, {'id': 'c', 'score': 0.9}], 2]))\n",
+      "solution": "def solve(records,k):\n    if k <= 0:\n        return []\n    return [r['id'] for r in sorted(records,key=lambda r:(-r['score'],r['id']))[:k]]\n\nprint(solve(*[[{'id': 'b', 'score': 0.7}, {'id': 'a', 'score': 0.7}, {'id': 'c', 'score': 0.9}], 2]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "b",
+                "score": 0.7
+              },
+              {
+                "id": "a",
+                "score": 0.7
+              },
+              {
+                "id": "c",
+                "score": 0.9
+              }
+            ],
+            2
+          ],
+          "expected": [
+            "c",
+            "a"
+          ]
+        },
+        {
+          "args": [
+            [],
+            3
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "x",
+                "score": 1
+              }
+            ],
+            0
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "排序键为 (-score,id)。",
+      "reason": "小数据暴力排序可解释行为，真实规模需使用官方允许的检索组件并保存映射。",
+      "quiz": "索引行号可以永远当文档 ID 吗？",
+      "choices": [
+        "不行，要维护映射",
+        "可以，无需记录",
+        "可以，只要排过序"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w08-1",
+      "week": 8,
+      "title": "清洗与稳定去重",
+      "concept": "清洗须保留业务含义，不能删除政策数字或否定词。空白归一化能合并无意义重复；去重时保留第一次出现的顺序，方便追踪。",
+      "task": "将每条文本的连续空白压为单空格，去首尾空白，删除空项并按首次出现顺序去重。",
+      "starter": "def solve(texts):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[' a  b ', 'a b', '\\n', 'c\\td']]))\n",
+      "solution": "def solve(texts):\n    result=[]\n    for text in texts:\n        clean=' '.join(text.split())\n        if clean and clean not in result:\n            result.append(clean)\n    return result\n\nprint(solve(*[[' a  b ', 'a b', '\\n', 'c\\td']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              " a  b ",
+              "a b",
+              "\n",
+              "c\td"
+            ]
+          ],
+          "expected": [
+            "a b",
+            "c d"
+          ]
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "split 后 join；集合去重可能改变顺序。",
+      "reason": "真实文档还需解析 Markdown/TXT/JSON；不要用粗暴正则删除所有符号，数值条件可能丢失。",
+      "quiz": "清洗可以删去“不低于”吗？",
+      "choices": [
+        "只保留名词即可",
+        "不行，会改变政策含义",
+        "可以，属于停用词"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w08-2",
+      "week": 8,
+      "title": "Chunk 与 Overlap",
+      "concept": "切片太短会丢上下文，太长会占用模型预算。重叠能减轻边界截断，步长为 size-overlap；必须保证步长为正，防止无限循环。",
+      "task": "按字符切片，size>0 且 0≤overlap<size；参数非法返回 []。到尾部即停止，不额外生成完全被末片覆盖的小片。",
+      "starter": "def solve(text, size, overlap):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['abcdefgh', 4, 1]))\n",
+      "solution": "def solve(text,size,overlap):\n    if size <= 0 or not 0 <= overlap < size:\n        return []\n    chunks=[]\n    for start in range(0,len(text),size-overlap):\n        chunks.append(text[start:start+size])\n        if start+size >= len(text):\n            break\n    return chunks\n\nprint(solve(*['abcdefgh', 4, 1]))\n",
+      "cases": [
+        {
+          "args": [
+            "abcdefgh",
+            4,
+            1
+          ],
+          "expected": [
+            "abcd",
+            "defg",
+            "gh"
+          ]
+        },
+        {
+          "args": [
+            "abc",
+            4,
+            1
+          ],
+          "expected": [
+            "abc"
+          ]
+        },
+        {
+          "args": [
+            "abc",
+            2,
+            2
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            "",
+            4,
+            1
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "遇到已覆盖末尾的切片就 break。",
+      "reason": "生产切片可按段落与 token 预算组织；本题是字符切片，不能把字符长度直接当模型 token。",
+      "quiz": "overlap≥size 会有什么风险？",
+      "choices": [
+        "步长不为正",
+        "自动提高召回率",
+        "永远不影响循环"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w08-3",
+      "week": 8,
+      "title": "元数据与文档清单",
+      "concept": "每个片段应保留文档 ID、标题、版本、生效日期和切片序号。保存索引时一起保存清单，重载检查片段数一致，避免模型与索引版本不匹配。",
+      "task": "按文档 ID 统计片段数量并按 ID 排序，返回 [{id,chunks}]。每片含 doc_id。",
+      "starter": "def solve(chunks):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'doc_id': 'b'}, {'doc_id': 'a'}, {'doc_id': 'a'}]]))\n",
+      "solution": "from collections import Counter\ndef solve(chunks):\n    counts=Counter(c['doc_id'] for c in chunks)\n    return [{'id':key,'chunks':counts[key]} for key in sorted(counts)]\n\nprint(solve(*[[{'doc_id': 'b'}, {'doc_id': 'a'}, {'doc_id': 'a'}]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "doc_id": "b"
+              },
+              {
+                "doc_id": "a"
+              },
+              {
+                "doc_id": "a"
+              }
+            ]
+          ],
+          "expected": [
+            {
+              "id": "a",
+              "chunks": 2
+            },
+            {
+              "id": "b",
+              "chunks": 1
+            }
+          ]
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "Counter 聚合，再排序生成清单。",
+      "reason": "真实清单需要版本、日期、校验值等信息，本题练习数量一致性，后续实战不可省略元数据。",
+      "quiz": "保存索引为什么还需文档清单？",
+      "choices": [
+        "增大提交包",
+        "替代模型文件",
+        "验证映射、版本和片段数量"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w09-1",
+      "week": 9,
+      "title": "关键词检索与候选召回",
+      "concept": "关键词检索适合精确术语与数字，语义检索适合同义表达。两者互补；无匹配时不要硬返回第一篇文档。",
+      "task": "关键词去重后，按每篇文档包含多少个非空关键词打分；只返回正分文档 ID，按分降序、ID 升序。",
+      "starter": "def solve(docs, keywords):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'a', 'text': '退款7天'}, {'id': 'b', 'text': '退款入口'}], ['退款', '7', '7']]))\n",
+      "solution": "def solve(docs,keywords):\n    terms={k for k in keywords if k}\n    scored=[(sum(k in d['text'] for k in terms),d['id']) for d in docs]\n    return [doc for score,doc in sorted(scored,key=lambda x:(-x[0],x[1])) if score>0]\n\nprint(solve(*[[{'id': 'a', 'text': '退款7天'}, {'id': 'b', 'text': '退款入口'}], ['退款', '7', '7']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "a",
+                "text": "退款7天"
+              },
+              {
+                "id": "b",
+                "text": "退款入口"
+              }
+            ],
+            [
+              "退款",
+              "7",
+              "7"
+            ]
+          ],
+          "expected": [
+            "a",
+            "b"
+          ]
+        },
+        {
+          "args": [
+            [
+              {
+                "id": "a",
+                "text": "循环"
+              }
+            ],
+            [
+              "证书"
+            ]
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "关键词集合防止重复词加倍计分。",
+      "reason": "这是词项包含模拟，不是 BM25 或语义模型；检索结果必须再做证据充分性判断。",
+      "quiz": "关键词检索更擅长什么？",
+      "choices": [
+        "精确术语、编号与数字",
+        "任何语义理解",
+        "替代所有向量模型"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w09-2",
+      "week": 9,
+      "title": "混合检索与 RRF 融合",
+      "concept": "不同检索器的原始分数尺度可能不同，直接相加容易失衡。RRF 根据排名融合：每个排名 r（从 1 起）贡献 1/(常数+r)，再合并同一文档。",
+      "task": "两个去重排名列表使用常数 60 做 RRF，按总分降序、ID 升序返回所有 ID。",
+      "starter": "def solve(rank_a, rank_b):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['a', 'b'], ['b', 'c']]))\n",
+      "solution": "def solve(rank_a,rank_b):\n    scores={}\n    for ranking in (rank_a,rank_b):\n        for rank,doc in enumerate(dict.fromkeys(ranking),1):\n            scores[doc]=scores.get(doc,0)+1/(60+rank)\n    return sorted(scores,key=lambda doc:(-scores[doc],doc))\n\nprint(solve(*[['a', 'b'], ['b', 'c']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "b",
+              "c"
+            ]
+          ],
+          "expected": [
+            "b",
+            "a",
+            "c"
+          ]
+        },
+        {
+          "args": [
+            [],
+            [
+              "x"
+            ]
+          ],
+          "expected": [
+            "x"
+          ]
+        },
+        {
+          "args": [
+            [
+              "a",
+              "a"
+            ],
+            [
+              "b"
+            ]
+          ],
+          "expected": [
+            "a",
+            "b"
+          ]
+        }
+      ],
+      "hint": "先对单个排名稳定去重，再累计贡献。",
+      "reason": "融合后仍要评估 Recall@K，不要假设加入检索器必然提高质量。",
+      "quiz": "为什么不直接相加两个原始分数？",
+      "choices": [
+        "Python 不能加浮点数",
+        "向量分数总是概率",
+        "分数尺度可能不同"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w09-3",
+      "week": 9,
+      "title": "Recall@K 与评估集",
+      "concept": "Recall@K 衡量相关来源中有多少被前 K 个结果召回。多个相关文档时要按集合计算；检索正确不代表最终答案一定正确。",
+      "task": "对单个问题计算 Recall@K，返回 4 位小数；无标准来源返回 0。重复返回的 ID 只计一次。",
+      "starter": "def solve(retrieved, gold, k):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['a', 'b', 'c'], ['b', 'c'], 2]))\n",
+      "solution": "def solve(retrieved,gold,k):\n    target=set(gold)\n    if not target:\n        return 0\n    return round(len(set(retrieved[:max(k,0)]) & target)/len(target),4)\n\nprint(solve(*[['a', 'b', 'c'], ['b', 'c'], 2]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "a",
+              "b",
+              "c"
+            ],
+            [
+              "b",
+              "c"
+            ],
+            2
+          ],
+          "expected": 0.5
+        },
+        {
+          "args": [
+            [
+              "a",
+              "a"
+            ],
+            [
+              "a",
+              "b"
+            ],
+            2
+          ],
+          "expected": 0.5
+        },
+        {
+          "args": [
+            [],
+            [],
+            3
+          ],
+          "expected": 0
+        }
+      ],
+      "hint": "分母是标准相关文档数。",
+      "reason": "W9 Recall@3≥90% 是自建训练集目标，不是官方保证或获奖分数线。",
+      "quiz": "召回率高是否保证事实回答正确？",
+      "choices": [
+        "只要 top_k 大就保证",
+        "不能，还需验证生成与来源",
+        "保证"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w10-1",
+      "week": 10,
+      "title": "生效日期与版本冲突",
+      "concept": "选择最新文档不能只比较版本字符串，更不能选未来才生效的规定。先过滤生效日期，再按版本（本练习为整数）选择，同主题独立处理。",
+      "task": "过滤 effective≤today 的文档，为每个 topic 取 version 最大者（同版本选 effective 更晚者），返回按 topic 排序的 ID。日期均为 ISO YYYY-MM-DD。",
+      "starter": "def solve(docs, today):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'v1', 'topic': 'refund', 'version': 1, 'effective': '2026-01-01'}, {'id': 'v2', 'topic': 'refund', 'version': 2, 'effective': '2027-01-01'}], '2026-12-01']))\n",
+      "solution": "def solve(docs,today):\n    chosen={}\n    for d in docs:\n        if d['effective'] > today:\n            continue\n        old=chosen.get(d['topic'])\n        if old is None or (d['version'],d['effective']) > (old['version'],old['effective']):\n            chosen[d['topic']]=d\n    return [chosen[key]['id'] for key in sorted(chosen)]\n\nprint(solve(*[[{'id': 'v1', 'topic': 'refund', 'version': 1, 'effective': '2026-01-01'}, {'id': 'v2', 'topic': 'refund', 'version': 2, 'effective': '2027-01-01'}], '2026-12-01']))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "v1",
+                "topic": "refund",
+                "version": 1,
+                "effective": "2026-01-01"
+              },
+              {
+                "id": "v2",
+                "topic": "refund",
+                "version": 2,
+                "effective": "2027-01-01"
+              }
+            ],
+            "2026-12-01"
+          ],
+          "expected": [
+            "v1"
+          ]
+        },
+        {
+          "args": [
+            [],
+            "2026-01-01"
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "ISO 日期字符串可按字典序比较。",
+      "reason": "实际版本如 1.10 应解析为数字元组而非字符串；保留旧版本用于追溯，不能直接删除有效资料。",
+      "quiz": "未来生效的新版本应立刻用于当前答复吗？",
+      "choices": [
+        "应该，版本越大越好",
+        "看文件名长短",
+        "不应该"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w10-2",
+      "week": 10,
+      "title": "关键事实与数值条件",
+      "concept": "政策答复必须覆盖完整条件，比如“7 日内”并且“未开课”，遗漏条件会误导用户。事实槽位检查应区分且/或与比较边界。",
+      "task": "模拟退费资格：days 在 0–7（含边界）且 started=False 才允许；负天数不合法返回 False。",
+      "starter": "def solve(days, started):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[7, False]))\n",
+      "solution": "def solve(days,started):\n    return 0 <= days <= 7 and not started\n\nprint(solve(*[7, False]))\n",
+      "cases": [
+        {
+          "args": [
+            7,
+            false
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            8,
+            false
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            1,
+            true
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            -1,
+            false
+          ],
+          "expected": false
+        }
+      ],
+      "hint": "条件之间是 and。",
+      "reason": "这是附录虚构制度的逻辑训练，不能当作真实平台退费政策；真实答复应从当前生效证据抽取条件。",
+      "quiz": "“7日内且未开课”的逻辑关系是什么？",
+      "choices": [
+        "只要没开课就行",
+        "两个条件必须同时成立",
+        "任意一个成立"
+      ],
+      "correct": 1,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w10-3",
+      "week": 10,
+      "title": "跨文档证据与来源去重",
+      "concept": "跨文档问题需合并证据，sources 只返回实际用于回答的片段所属文档。用稳定去重保留引用顺序，避免同一文档多片段反复出现。",
+      "task": "输入已使用证据，每项有 id/text；返回 answer（文本以中文分号连接）和 sources（按出现顺序去重的 ID）。",
+      "starter": "def solve(evidence):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'id': 'a', 'text': '完成90%'}, {'id': 'b', 'text': '测试80分'}, {'id': 'a', 'text': '在学习中心申请'}]]))\n",
+      "solution": "def solve(evidence):\n    return {'answer':'；'.join(e['text'] for e in evidence), 'sources':list(dict.fromkeys(e['id'] for e in evidence))}\n\nprint(solve(*[[{'id': 'a', 'text': '完成90%'}, {'id': 'b', 'text': '测试80分'}, {'id': 'a', 'text': '在学习中心申请'}]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "id": "a",
+                "text": "完成90%"
+              },
+              {
+                "id": "b",
+                "text": "测试80分"
+              },
+              {
+                "id": "a",
+                "text": "在学习中心申请"
+              }
+            ]
+          ],
+          "expected": {
+            "answer": "完成90%；测试80分；在学习中心申请",
+            "sources": [
+              "a",
+              "b"
+            ]
+          }
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": {
+            "answer": "",
+            "sources": []
+          }
+        }
+      ],
+      "hint": "dict.fromkeys 保留顺序。",
+      "reason": "本题模拟证据编排；正式服务需要模型生成与事实校验，空证据应走完整拒答流程。",
+      "quiz": "来源列表应包括所有召回文档吗？",
+      "choices": [
+        "只包括实际用于答复的文档",
+        "必须全部返回",
+        "只返回得分最低的"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 3
+    },
+    {
+      "id": "w11-1",
+      "week": 11,
+      "title": "同义词、口语与错别字归一化",
+      "concept": "归一化只改已知的表达变体，避免过度替换损坏数值与否定条件。记录原问题与标准化文本，方便评估和排错。",
+      "task": "去掉首尾空白，将“退废”改为“退费”、“咋”改为“怎么”，其他字符保留。",
+      "starter": "def solve(text):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[' 退废咋申请 ']))\n",
+      "solution": "def solve(text):\n    return text.strip().replace('退废','退费').replace('咋','怎么')\n\nprint(solve(*[' 退废咋申请 ']))\n",
+      "cases": [
+        {
+          "args": [
+            " 退废咋申请 "
+          ],
+          "expected": "退费怎么申请"
+        },
+        {
+          "args": [
+            "不能退费"
+          ],
+          "expected": "不能退费"
+        },
+        {
+          "args": [
+            "7天内"
+          ],
+          "expected": "7天内"
+        }
+      ],
+      "hint": "仅替换已知变体，保留条件。",
+      "reason": "归一化不是答案表；正式测试要有未见过的同义问法，检验泛化而非记忆公开题。",
+      "quiz": "为什么不能删除所有否定词？",
+      "choices": [
+        "Python 不支持",
+        "会改变业务含义",
+        "会增加内存"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w11-2",
+      "week": 11,
+      "title": "拒答评估与混淆统计",
+      "concept": "拒答要同时防止误拒答与编造。拒答召回率=正确拒答/应该拒答，拒答精确率=正确拒答/所有预测拒答；必须明确正类定义。",
+      "task": "gold/pred 为同长布尔列表，True 表示应拒答/预测拒答；返回拒答 precision 和 recall（4位小数），零分母记 0。",
+      "starter": "def solve(gold, pred):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[True, True, False], [True, False, True]]))\n",
+      "solution": "def solve(gold,pred):\n    tp=sum(g and p for g,p in zip(gold,pred))\n    return {'precision':round(tp/sum(pred),4) if sum(pred) else 0, 'recall':round(tp/sum(gold),4) if sum(gold) else 0}\n\nprint(solve(*[[True, True, False], [True, False, True]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              false,
+              true
+            ]
+          ],
+          "expected": {
+            "precision": 0.5,
+            "recall": 0.5
+          }
+        },
+        {
+          "args": [
+            [
+              false
+            ],
+            [
+              false
+            ]
+          ],
+          "expected": {
+            "precision": 0,
+            "recall": 0
+          }
+        }
+      ],
+      "hint": "先明确 True 是拒答，再计算 TP。",
+      "reason": "这里输入长度已约定相同；真实评估入口应验证长度并保存逐条结果，不能只看一个平均分。",
+      "quiz": "拒答召回率分母是什么？",
+      "choices": [
+        "应该拒答的问题数",
+        "所有预测拒答的问题数",
+        "所有正确回答数"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w11-3",
+      "week": 11,
+      "title": "错误分桶与补强顺序",
+      "concept": "错误分析先区分召回失败、生成遗漏、来源错误、结构错误与误拒答，再对症改动。不能看到分数下降就同时修改所有模块。",
+      "task": "按错误类别统计数量，按数量降序、类别名升序返回 [[类别,数量]]。",
+      "starter": "def solve(errors):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['recall', 'schema', 'recall', 'source']]))\n",
+      "solution": "from collections import Counter\ndef solve(errors):\n    return [list(x) for x in sorted(Counter(errors).items(),key=lambda x:(-x[1],x[0]))]\n\nprint(solve(*[['recall', 'schema', 'recall', 'source']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "recall",
+              "schema",
+              "recall",
+              "source"
+            ]
+          ],
+          "expected": [
+            [
+              "recall",
+              2
+            ],
+            [
+              "schema",
+              1
+            ],
+            [
+              "source",
+              1
+            ]
+          ]
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "Counter 与二级排序。",
+      "reason": "自建100条业务集保留原句、预期事实、来源、版本日期及错误类别，避免复盘只剩“回答不好”。",
+      "quiz": "来源未召回时应优先排查什么？",
+      "choices": [
+        "网页颜色",
+        "答案字体",
+        "检索与文档处理"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 3
+    },
+    {
+      "id": "w12-1",
+      "week": 12,
+      "title": "缓存键与版本失效",
+      "concept": "缓存键不仅是问题文本，还应包含影响结果的模型/索引/Prompt 版本与 top_k。版本更新时旧缓存不能继续回答新政策。",
+      "task": "返回稳定 JSON 缓存键，包含 q（strip）、k、version，键排序，ensure_ascii=False，分隔符使用逗号与冒号（无空格）。",
+      "starter": "def solve(question, top_k, version):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[' 退费 ', 3, 'v2']))\n",
+      "solution": "import json\ndef solve(question,top_k,version):\n    return json.dumps({'q':question.strip(),'k':top_k,'version':version},ensure_ascii=False,sort_keys=True,separators=(',',':'))\n\nprint(solve(*[' 退费 ', 3, 'v2']))\n",
+      "cases": [
+        {
+          "args": [
+            " 退费 ",
+            3,
+            "v2"
+          ],
+          "expected": "{\"k\":3,\"q\":\"退费\",\"version\":\"v2\"}"
+        },
+        {
+          "args": [
+            "x",
+            1,
+            "v1"
+          ],
+          "expected": "{\"k\":1,\"q\":\"x\",\"version\":\"v1\"}"
+        }
+      ],
+      "hint": "json.dumps 可指定 sort_keys 和 separators。",
+      "reason": "真实缓存还需容量、有效期和并发安全；敏感用户数据不能在不同用户间错误复用。",
+      "quiz": "文档版本变了是否仍可复用旧答案？",
+      "choices": [
+        "必须失效或用新版本键",
+        "始终可以",
+        "只检查问题相同"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 4
+    },
+    {
+      "id": "w12-2",
+      "week": 12,
+      "title": "LRU 缓存与重复计算",
+      "concept": "lru_cache 根据参数复用纯函数结果；缓存不适合依赖未纳入键的可变外部状态。统计命中与实际计算次数验证优化是否生效。",
+      "task": "在一次调用内用 lru_cache 模拟嵌入函数（值的平方），返回每个值结果及实际 computations。缓存无容量限制，仅限这次 solve。",
+      "starter": "def solve(values):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[2, 2, 3, 2]]))\n",
+      "solution": "from functools import lru_cache\ndef solve(values):\n    calls=0\n    @lru_cache(maxsize=None)\n    def embed(x):\n        nonlocal calls\n        calls+=1\n        return x*x\n    results=[embed(x) for x in values]\n    return {'results':results,'computations':calls}\n\nprint(solve(*[[2, 2, 3, 2]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              2,
+              2,
+              3,
+              2
+            ]
+          ],
+          "expected": {
+            "results": [
+              4,
+              4,
+              9,
+              4
+            ],
+            "computations": 2
+          }
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": {
+            "results": [],
+            "computations": 0
+          }
+        }
+      ],
+      "hint": "计算计数器放在被缓存函数内部。",
+      "reason": "平方函数只是重复计算模拟；真实实验必须实际编码模型并记录时延、内存与效果。",
+      "quiz": "缓存效果应如何验证？",
+      "choices": [
+        "只看代码中出现 lru_cache",
+        "将所有结果返回固定值",
+        "检查命中、计算次数、时延及质量"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 4
+    },
+    {
+      "id": "w12-3",
+      "week": 12,
+      "title": "平均时延与 P95",
+      "concept": "先预热再测量，客户端观察时延，不直接使用服务自报值。P95 有多种定义，本题使用 nearest-rank：排序后 ceil(0.95*n) 位置。",
+      "task": "输入非负毫秒列表，返回 mean（2位）和 p95；空列表返回两者为 0。",
+      "starter": "def solve(times):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[10, 20, 30, 40, 100]]))\n",
+      "solution": "import math\ndef solve(times):\n    if not times:\n        return {'mean':0,'p95':0}\n    return {'mean':round(sum(times)/len(times),2),'p95':sorted(times)[math.ceil(0.95*len(times))-1]}\n\nprint(solve(*[[10, 20, 30, 40, 100]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              10,
+              20,
+              30,
+              40,
+              100
+            ]
+          ],
+          "expected": {
+            "mean": 40,
+            "p95": 100
+          }
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": {
+            "mean": 0,
+            "p95": 0
+          }
+        },
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20
+            ]
+          ],
+          "expected": {
+            "mean": 10.5,
+            "p95": 19
+          }
+        }
+      ],
+      "hint": "nearest-rank 是从 1 开始的位置。",
+      "reason": "浏览器数据仅用于学习统计，不能作为官方 2核/4GB 环境的模型性能证明。",
+      "quiz": "只看平均时延会漏掉什么？",
+      "choices": [
+        "接口路径",
+        "尾部慢请求",
+        "文本编码"
+      ],
+      "correct": 1,
+      "sim": true,
+      "module": 4
+    },
+    {
+      "id": "w13-1",
+      "week": 13,
+      "title": "异步、批处理与结果顺序",
+      "concept": "asyncio.gather 按传入顺序组织结果，即使任务完成顺序不同。异步不自动加速 CPU 密集推理，应结合线程/进程和框架约束；并发要限制。",
+      "task": "写异步 answer：await asyncio.sleep(0) 后 strip 并大写；solve 用 asyncio.gather 返回结果，可使用 async def solve。",
+      "starter": "def solve(questions):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[' b ', 'a']]))\n",
+      "solution": "import asyncio\nasync def solve(questions):\n    async def answer(q):\n        await asyncio.sleep(0)\n        return q.strip().upper()\n    return await asyncio.gather(*(answer(q) for q in questions))\n\nprint(await solve(*[[' b ', 'a']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              " b ",
+              "a"
+            ]
+          ],
+          "expected": [
+            "B",
+            "A"
+          ]
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "gather 接收展开的 awaitable。",
+      "reason": "本题没有真实 HTTP 或模型，仅验证事件循环与顺序。真实压测做20请求/并发4并核对每条来源。",
+      "quiz": "gather 的返回顺序是什么？",
+      "choices": [
+        "完成先后顺序",
+        "随机顺序",
+        "传入任务顺序"
+      ],
+      "correct": 2,
+      "sim": true,
+      "module": 4
+    },
+    {
+      "id": "w13-2",
+      "week": 13,
+      "title": "批大小与分批处理",
+      "concept": "过大的批次可能超出内存，过小则浪费调用开销。批处理需要保留输入顺序并验证每个问题，样题接口一次最多10条。",
+      "task": "把列表按 size 分批，保留尾部不足一批的数据；size≤0 返回 []。",
+      "starter": "def solve(items, size):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[1, 2, 3, 4, 5], 2]))\n",
+      "solution": "def solve(items,size):\n    if size <= 0:\n        return []\n    return [items[i:i+size] for i in range(0,len(items),size)]\n\nprint(solve(*[[1, 2, 3, 4, 5], 2]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            2
+          ],
+          "expected": [
+            [
+              1,
+              2
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              5
+            ]
+          ]
+        },
+        {
+          "args": [
+            [],
+            3
+          ],
+          "expected": []
+        },
+        {
+          "args": [
+            [
+              1
+            ],
+            0
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "range 起点0，步长 size。",
+      "reason": "本题只练分批；真实接口还需拒绝0条或超过10条请求，不能静默拆分绕过协议。",
+      "quiz": "批输出顺序能否按响应快慢排序？",
+      "choices": [
+        "只要数量一样即可",
+        "不能，要保留问题顺序",
+        "可以"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 4
+    },
+    {
+      "id": "w13-3",
+      "week": 13,
+      "title": "量化权衡与质量门槛",
+      "concept": "量化降低精度与资源开销，可能损失效果，需验证框架支持和硬件收益。样题规定低于完整基线90%时任务四性能分为0，速度提升不能抵消质量失败。",
+      "task": "根据基线质量与优化质量返回效果保持得分：比值≥0.95为2，≥0.90为1，否则0；基线≤0返回0。",
+      "starter": "def solve(baseline, optimized):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[100, 95]))\n",
+      "solution": "def solve(baseline,optimized):\n    if baseline <= 0:\n        return 0\n    ratio=optimized/baseline\n    return 2 if ratio >= 0.95 else (1 if ratio >= 0.90 else 0)\n\nprint(solve(*[100, 95]))\n",
+      "cases": [
+        {
+          "args": [
+            100,
+            95
+          ],
+          "expected": 2
+        },
+        {
+          "args": [
+            100,
+            90
+          ],
+          "expected": 1
+        },
+        {
+          "args": [
+            100,
+            89
+          ],
+          "expected": 0
+        },
+        {
+          "args": [
+            0,
+            1
+          ],
+          "expected": 0
+        }
+      ],
+      "hint": "比较比例，不是相差几个百分点。",
+      "reason": "本题只是样题效果门槛计算，没有实际量化模型；正式性能阈值以当场题面为准。",
+      "quiz": "能否跳过模型调用换取性能分？",
+      "choices": [
+        "不能",
+        "可以，只要返回快",
+        "只在缓存时可以伪造"
+      ],
+      "correct": 0,
+      "sim": true,
+      "module": 4
+    },
+    {
+      "id": "w14-1",
+      "week": 14,
+      "title": "页面状态与 Fetch 错误处理",
+      "concept": "问答页面至少有输入、提交、加载、答案、来源和错误区域。fetch 在 HTTP 400/500 不会自动抛错，应检查 response.ok，再处理 JSON 与网络失败。",
+      "task": "模拟 UI 状态归约：idle/loading/success/error 事件返回状态字典；success payload为答案，error payload为错误信息，未知事件返回 idle。",
+      "starter": "def solve(event, payload):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['loading', '']))\n",
+      "solution": "def solve(event,payload):\n    result={'loading':False,'answer':'','error':''}\n    if event=='loading':\n        result['loading']=True\n    elif event=='success':\n        result['answer']=payload\n    elif event=='error':\n        result['error']=payload\n    return result\n\nprint(solve(*['loading', '']))\n",
+      "cases": [
+        {
+          "args": [
+            "loading",
+            ""
+          ],
+          "expected": {
+            "loading": true,
+            "answer": "",
+            "error": ""
+          }
+        },
+        {
+          "args": [
+            "error",
+            "请求失败"
+          ],
+          "expected": {
+            "loading": false,
+            "answer": "",
+            "error": "请求失败"
+          }
+        },
+        {
+          "args": [
+            "success",
+            "周二直播"
+          ],
+          "expected": {
+            "loading": false,
+            "answer": "周二直播",
+            "error": ""
+          }
+        }
+      ],
+      "hint": "每次用干净状态，防止旧答案混入错误页。",
+      "reason": "Python 只模拟状态；官方实战要在 HTML/CSS/JS 里实现固定 data-testid 与 fetch 交互。",
+      "quiz": "fetch 遇到 HTTP 500 一定自动抛异常吗？",
+      "choices": [
+        "只在移动端会",
+        "不会，应检查 response.ok",
+        "会，无需判断"
+      ],
+      "correct": 1,
+      "sim": true,
+      "module": 5
+    },
+    {
+      "id": "w14-2",
+      "week": 14,
+      "title": "JSONL 日志与请求追踪",
+      "concept": "JSONL 每行一个 JSON 对象，便于机器解析。request_id 贯穿接口与日志；避免记录密钥、完整 Prompt 和敏感输入，错误响应不暴露堆栈。",
+      "task": "把日志列表序列化为 JSONL，每条用 ensure_ascii=False、sort_keys=True，无额外空格，末行也要换行；空列表返回空字符串。",
+      "starter": "def solve(records):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[{'request_id': 'r1', 'ok': True}]]))\n",
+      "solution": "import json\ndef solve(records):\n    return ''.join(json.dumps(r,ensure_ascii=False,sort_keys=True,separators=(',',':'))+'\\n' for r in records)\n\nprint(solve(*[[{'request_id': 'r1', 'ok': True}]]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              {
+                "request_id": "r1",
+                "ok": true
+              }
+            ]
+          ],
+          "expected": "{\"ok\":true,\"request_id\":\"r1\"}\n"
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": ""
+        }
+      ],
+      "hint": "逐行 dumps，不是把整个列表 dumps。",
+      "reason": "生产日志还需时间、阶段耗时与错误分类，根据题面核对字段；日志容量与隐私需受控。",
+      "quiz": "JSONL 每一行是什么？",
+      "choices": [
+        "一个独立 JSON 对象",
+        "整个 Python repr",
+        "任意调试文本"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w14-3",
+      "week": 14,
+      "title": "页面契约与自动验收",
+      "concept": "自动评分关注可操作流程和固定元素。data-testid 是稳定测试契约，重构样式不应随意改名。错误路径也要可见可读。",
+      "task": "从给定 testid 列表找出缺失必需项，按字母排序：question-input、submit-button、loading-indicator、answer-output、sources-output、error-message。",
+      "starter": "def solve(present):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['question-input', 'submit-button', 'loading-indicator', 'answer-output', 'sources-output']]))\n",
+      "solution": "def solve(present):\n    required={'question-input','submit-button','loading-indicator','answer-output','sources-output','error-message'}\n    return sorted(required-set(present))\n\nprint(solve(*[['question-input', 'submit-button', 'loading-indicator', 'answer-output', 'sources-output']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "question-input",
+              "submit-button",
+              "loading-indicator",
+              "answer-output",
+              "sources-output"
+            ]
+          ],
+          "expected": [
+            "error-message"
+          ]
+        },
+        {
+          "args": [
+            [
+              "question-input"
+            ]
+          ],
+          "expected": [
+            "answer-output",
+            "error-message",
+            "loading-indicator",
+            "sources-output",
+            "submit-button"
+          ]
+        }
+      ],
+      "hint": "集合差集即可。",
+      "reason": "本题是官方样题的问答应用契约，本学习网站自身不是参赛提交的问答服务。",
+      "quiz": "页面美观是否能替代固定交互元素？",
+      "choices": [
+        "可以",
+        "只需提交截图",
+        "不能，要满足页面契约"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w15-1",
+      "week": 15,
+      "title": "交付清单与路径安全",
+      "concept": "提交包必须遵循目录约定，不能含外部模型、密钥或指向包外的软链接。不能为了打包方便改接口名；相对路径也要防止 .. 越界。",
+      "task": "判断路径是否是安全的相对 POSIX 路径：非空、不是绝对路径、不含 .. 段、不含反斜杠或冒号。",
+      "starter": "def solve(path):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*['src/app.py']))\n",
+      "solution": "from pathlib import PurePosixPath\ndef solve(path):\n    return bool(path) and not path.startswith('/') and '..' not in PurePosixPath(path).parts and '\\\\' not in path and ':' not in path\n\nprint(solve(*['src/app.py']))\n",
+      "cases": [
+        {
+          "args": [
+            "src/app.py"
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            "../secret"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "/etc/passwd"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            "D:\\model"
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            ""
+          ],
+          "expected": false
+        }
+      ],
+      "hint": "检查路径段，而非只找字符串 ..。",
+      "reason": "静态路径校验不能发现符号链接越界；真实打包还需 resolve 后检查边界，并按平台规则拒绝不允许的文件。",
+      "quiz": "相对路径是否天然安全？",
+      "choices": [
+        "不是，可能通过 .. 或软链接越界",
+        "是",
+        "只有 Windows 不安全"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w15-2",
+      "week": 15,
+      "title": "统一项目与必需文件",
+      "concept": "同一服务入口应复用模型、索引、配置和日志。只提交一个统一项目包；模型与隐藏数据由平台挂载，不打包进去。",
+      "task": "给定文件路径列表，返回缺少的必需文件（排序）：manifest.json、app.py、config/model.yaml、config/generation.yaml、prompts/system.txt、artifacts/document_manifest.json、logs/env_check.json、README.md。",
+      "starter": "def solve(files):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[['manifest.json', 'app.py', 'config/model.yaml', 'config/generation.yaml', 'prompts/system.txt', 'artifacts/document_manifest.json', 'logs/env_check.json']]))\n",
+      "solution": "def solve(files):\n    required={'manifest.json','app.py','config/model.yaml','config/generation.yaml','prompts/system.txt','artifacts/document_manifest.json','logs/env_check.json','README.md'}\n    return sorted(required-set(files))\n\nprint(solve(*[['manifest.json', 'app.py', 'config/model.yaml', 'config/generation.yaml', 'prompts/system.txt', 'artifacts/document_manifest.json', 'logs/env_check.json']]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              "manifest.json",
+              "app.py",
+              "config/model.yaml",
+              "config/generation.yaml",
+              "prompts/system.txt",
+              "artifacts/document_manifest.json",
+              "logs/env_check.json"
+            ]
+          ],
+          "expected": [
+            "README.md"
+          ]
+        },
+        {
+          "args": [
+            []
+          ],
+          "expected": [
+            "README.md",
+            "app.py",
+            "artifacts/document_manifest.json",
+            "config/generation.yaml",
+            "config/model.yaml",
+            "logs/env_check.json",
+            "manifest.json",
+            "prompts/system.txt"
+          ]
+        }
+      ],
+      "hint": "集合差集后排序。",
+      "reason": "这不是完整官方目录检查器；真实还需 src、web、artifacts/index、logs/app.jsonl、清单声明与文件大小检查。",
+      "quiz": "基础模型是否应打包进 submission？",
+      "choices": [
+        "必须复制一份",
+        "换成更大的外部模型",
+        "不应，使用平台只读挂载"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w15-3",
+      "week": 15,
+      "title": "四小时模拟配时与故障优先级",
+      "concept": "限时训练按可得分且可独立验证的成果推进。先恢复服务和协议，再打通检索，最后性能与交付；服务失败仍可检查静态成果，但不能因此放弃真实模型。",
+      "task": "训练配时固定顺序：环境20、服务40、Prompt25、RAG70、优化35、交付30分钟；输入已耗时 used，返回剩余分钟（最低0）和总预算。",
+      "starter": "def solve(used):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[60]))\n",
+      "solution": "def solve(used):\n    budget=sum([20,40,25,70,35,30])\n    return {'budget':budget,'remaining':max(0,budget-used)}\n\nprint(solve(*[60]))\n",
+      "cases": [
+        {
+          "args": [
+            60
+          ],
+          "expected": {
+            "budget": 220,
+            "remaining": 160
+          }
+        },
+        {
+          "args": [
+            240
+          ],
+          "expected": {
+            "budget": 220,
+            "remaining": 0
+          }
+        }
+      ],
+      "hint": "这套配时保留20分钟机动，总预算220。",
+      "reason": "220分钟任务加20分钟机动共4小时；这是训练建议，不是官方模块时间规定。",
+      "quiz": "陌生项目接管时第一步应是什么？",
+      "choices": [
+        "先改页面配色",
+        "读题、核对环境与启动入口",
+        "重写所有代码"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w16-1",
+      "week": 16,
+      "title": "综合业务效果计分",
+      "concept": "规则中的业务效果加权为事实50%、来源20%、结构15%、关键词与数值10%、语义辅助5%。这只描述业务效果内部计分，不是五模块总分分配。",
+      "task": "接收五项0–1得分，按上述权重计算百分制业务分，保留2位小数。",
+      "starter": "def solve(facts, sources, schema, conditions, semantic):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[1, 1, 1, 1, 1]))\n",
+      "solution": "def solve(facts,sources,schema,conditions,semantic):\n    return round(100*(0.5*facts+0.2*sources+0.15*schema+0.1*conditions+0.05*semantic),2)\n\nprint(solve(*[1, 1, 1, 1, 1]))\n",
+      "cases": [
+        {
+          "args": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "expected": 100
+        },
+        {
+          "args": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "expected": 50
+        },
+        {
+          "args": [
+            0.8,
+            0.9,
+            1,
+            1,
+            0.8
+          ],
+          "expected": 87
+        }
+      ],
+      "hint": "不要把该权重误用到五模块总分。",
+      "reason": "训练90+是个人目标，官方获奖线随当届难度与组委会确定，本网站不保证比赛成绩。",
+      "quiz": "业务效果里占比最高的是什么？",
+      "choices": [
+        "语义流畅程度",
+        "网页颜色",
+        "关键事实"
+      ],
+      "correct": 2,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w16-2",
+      "week": 16,
+      "title": "回归测试与随机场景",
+      "concept": "改动检索或参数后应重跑固定回归集，检查旧功能退化；同时加入新措辞、数值边界和不同业务场景，防止针对公开题过拟合。",
+      "task": "比较同名用例的 before/after 布尔结果，返回原先通过而现在失败的 ID（排序）。缺失 after 视为失败。",
+      "starter": "def solve(before, after):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[{'a': True, 'b': False, 'c': True}, {'a': False, 'b': True}]))\n",
+      "solution": "def solve(before,after):\n    return sorted(key for key,value in before.items() if value and not after.get(key,False))\n\nprint(solve(*[{'a': True, 'b': False, 'c': True}, {'a': False, 'b': True}]))\n",
+      "cases": [
+        {
+          "args": [
+            {
+              "a": true,
+              "b": false,
+              "c": true
+            },
+            {
+              "a": false,
+              "b": true
+            }
+          ],
+          "expected": [
+            "a",
+            "c"
+          ]
+        },
+        {
+          "args": [
+            {
+              "a": true
+            },
+            {
+              "a": true
+            }
+          ],
+          "expected": []
+        }
+      ],
+      "hint": "只记录通过变失败，不把原有失败混入退化。",
+      "reason": "每次改动保留可回退版本，至少进行两次陌生场景4小时模拟，不能只在熟悉题库刷分。",
+      "quiz": "优化后为什么要重跑旧测试？",
+      "choices": [
+        "只需检查新功能",
+        "发现回归退化",
+        "为了增加训练时长"
+      ],
+      "correct": 1,
+      "sim": false,
+      "module": 5
+    },
+    {
+      "id": "w16-3",
+      "week": 16,
+      "title": "最终补强与毕业验收",
+      "concept": "完成率是过程记录，掌握需通过独立实作与陌生工程模拟验证。阶段门槛分别为16/20、12/15、21/25、12/15，最终90/100为训练目标。",
+      "task": "五模块得分列表与核心通过标记，返回是否达到毕业训练目标：总分≥90、core_ok=True、每项介于0与模块满分20/15/25/15/25之间。",
+      "starter": "def solve(scores, core_ok):\n    # 在这里完成逻辑；保留函数名和参数\n    pass\n\nprint(solve(*[[18, 14, 23, 13, 23], True]))\n",
+      "solution": "def solve(scores,core_ok):\n    limits=[20,15,25,15,25]\n    return len(scores)==5 and core_ok and all(0 <= s <= m for s,m in zip(scores,limits)) and sum(scores)>=90\n\nprint(solve(*[[18, 14, 23, 13, 23], True]))\n",
+      "cases": [
+        {
+          "args": [
+            [
+              18,
+              14,
+              23,
+              13,
+              23
+            ],
+            true
+          ],
+          "expected": true
+        },
+        {
+          "args": [
+            [
+              20,
+              15,
+              25,
+              15,
+              25
+            ],
+            false
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [
+              21,
+              15,
+              25,
+              15,
+              25
+            ],
+            true
+          ],
+          "expected": false
+        },
+        {
+          "args": [
+            [
+              10
+            ],
+            true
+          ],
+          "expected": false
+        }
+      ],
+      "hint": "先验证长度和每项范围，再算总分。",
+      "reason": "核心通过包括真实启动、实际模型调用、接口、来源与提交包；浏览器练习通过不自动代表这些实战已通过。",
+      "quiz": "知识点全勾选是否代表竞赛级掌握？",
+      "choices": [
+        "还需独立项目与限时模拟",
+        "一定代表",
+        "只需看答案就可以"
+      ],
+      "correct": 0,
+      "sim": false,
+      "module": 5
+    }
+  ],
+  "source": "用户提供的26页竞赛规则（2026-10-08）及既定16周规划；周度训练指标非官方分数线"
+}

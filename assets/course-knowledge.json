@@ -1,0 +1,158 @@
+[
+  {
+    "id": "python_variables_001",
+    "title": "变量与基本类型",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "Python变量绑定对象。常见类型有int、float、str、bool。输入函数input返回字符串，参与数值运算前需要显式转换；转换失败会抛出ValueError。",
+    "keywords": [
+      "变量",
+      "类型",
+      "input",
+      "转换"
+    ]
+  },
+  {
+    "id": "python_control_001",
+    "title": "条件与循环",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "if用于条件分支，for用于遍历可迭代对象，while根据条件重复执行。break退出最内层循环，continue跳过当前迭代余下语句。range的停止值不包含在结果中。",
+    "keywords": [
+      "循环",
+      "for",
+      "while",
+      "range"
+    ]
+  },
+  {
+    "id": "python_functions_001",
+    "title": "函数与返回值",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "使用def定义函数，参数接收输入，return返回结果。print只显示输出，不替代return。没有执行return的函数默认返回None。不要将可变列表作为默认参数。",
+    "keywords": [
+      "函数",
+      "def",
+      "return",
+      "None"
+    ]
+  },
+  {
+    "id": "python_list_001",
+    "title": "列表与切片",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "列表按顺序保存元素，下标从0开始，负下标从尾部计数。切片左闭右开。append原地追加并返回None；复制列表可使用切片或list构造，但浅复制不会递归复制嵌套对象。",
+    "keywords": [
+      "列表",
+      "切片",
+      "append",
+      "浅复制"
+    ]
+  },
+  {
+    "id": "python_dict_001",
+    "title": "字典与集合",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "字典按键查找值，下标访问缺失键会抛出KeyError，get可以提供默认值。集合适合去重与交并差运算，但不能依赖集合的迭代顺序。",
+    "keywords": [
+      "字典",
+      "集合",
+      "get",
+      "去重"
+    ]
+  },
+  {
+    "id": "python_files_001",
+    "title": "文件与编码",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "使用with open(path,encoding='utf-8')读取文本，离开with会关闭文件。pathlib可以连接相对路径。读取不存在的文件会抛出FileNotFoundError；不要写死个人电脑的绝对路径。",
+    "keywords": [
+      "文件",
+      "编码",
+      "pathlib",
+      "路径"
+    ]
+  },
+  {
+    "id": "python_json_001",
+    "title": "JSON资料处理",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "json.loads解析JSON字符串，json.load读取已打开文件。JSON语法错误会抛出JSONDecodeError。解析后还要验证顶层结构和字段类型，不能用eval处理外部JSON。",
+    "keywords": [
+      "JSON",
+      "loads",
+      "load",
+      "解析"
+    ]
+  },
+  {
+    "id": "python_exceptions_001",
+    "title": "异常处理与调试",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "try/except捕获预期异常，优先捕获具体类型。调试先构造最小复现并阅读异常类型和位置。不能用空except静默掩盖数据加载失败；面向用户的接口不能泄露内部堆栈。",
+    "keywords": [
+      "异常",
+      "报错",
+      "try",
+      "调试"
+    ]
+  },
+  {
+    "id": "python_modules_001",
+    "title": "模块与测试",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "将资料读取、检索和业务响应拆成模块；通过明确的函数参数传递数据，减少隐式全局依赖。测试覆盖正常、空值、非法格式和缺失文件；修改代码后重跑旧测试以发现回归。",
+    "keywords": [
+      "模块",
+      "测试",
+      "pytest",
+      "回归"
+    ]
+  },
+  {
+    "id": "course_homework_001",
+    "title": "模拟作业提交规则",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "本模拟课程的每周作业在周日20:00前提交一个ZIP包，包含源码、测试与README。截止前可重复提交，以最后一次有效提交为准。这里的作业时间为自建课程设定，不是竞赛提交时间。",
+    "keywords": [
+      "作业",
+      "提交",
+      "截止",
+      "ZIP"
+    ]
+  },
+  {
+    "id": "course_qa_001",
+    "title": "模拟答疑安排",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "本模拟课程周三与周五19:00至20:00答疑。提问需包含最小可复现代码、完整报错与预期行为；不要上传账号密码或个人敏感信息。此为自建模拟安排。",
+    "keywords": [
+      "答疑",
+      "提问",
+      "时间",
+      "报错"
+    ]
+  },
+  {
+    "id": "course_exam_001",
+    "title": "模拟阶段验收",
+    "version": 1,
+    "effective_date": "2026-11-09",
+    "text": "本模拟课程阶段作业建议总分达到80分且核心功能测试通过。评分参考为功能40、边界测试25、工程规范20、独立解释15分。该标准是学习计划，不是蓝桥杯官方评分或获奖线。",
+    "keywords": [
+      "考核",
+      "验收",
+      "80分",
+      "评分"
+    ]
+  }
+]
